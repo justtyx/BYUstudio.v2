@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vw;
+}
+/*HERO*/
+#hero {
+  position: relative;
+  display: flex;
+  margin-top: 5vw;
+}
+
+#jewellery {
+  position: relative;
+}
+
+#yellowText {
+  position: absolute;
+  top: 5.5vw;
+  left: 20vw;
+}
+
+h1 {
+  font-size: var(--h1-d);
+  position: absolute;
+  right: left;
+  width: 50vw;
+  z-index: 1;
+}
+
+#heroImg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 60vw;
+}
+
+/*Video*/
+
+#video {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4vw;
+  margin-top: 50vw;
+}
+
+#video > article {
+  display: flex;
+  flex-direction: column;
+  justify-self: baseline;
+  align-self: flex-end;
+}
+
+h3 {
+  font-size: var(--h3-d);
+  margin-bottom: 1vw;
+}
+
+article > p {
+  width: 26.111vw;
+  line-height: 1.8em;
+}
+
+video {
+  width: 56.528vw;
+}
+
+/* Steps */
+
+#steps {
+  height: 40.694vw;
+  background-color: var(--yellow);
+  width: 100vw;
+  margin: 10vw -6.944vw 0vw -6.944vw;
+}
