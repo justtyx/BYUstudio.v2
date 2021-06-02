@@ -11,14 +11,8 @@ function userSubmit() {
   localStorage.setItem("city", form.elements.city.value);
   localStorage.setItem("postalcode", form.elements.postalcode.value);
   localStorage.setItem("country", form.elements.country.value);
-  localStorage.setItem(
-    "billingaddress.checked",
-    form.elements.billingaddress.value
-  );
-  localStorage.setItem(
-    "deliveryoption.checked",
-    form.elements.deliveryoption.value
-  );
+  localStorage.setItem("billingaddress", form.elements.billingaddress.value);
+  localStorage.setItem("deliveryoption", form.elements.deliveryoption.value);
 }
 
 //   console.log(form.elements.firstname.value);

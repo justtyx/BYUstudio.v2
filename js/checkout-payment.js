@@ -2,6 +2,8 @@ const creditcard = document.querySelector("#creditcard");
 const paypal = document.querySelector("#paypal");
 creditcard.addEventListener("click", togglePaymentForm);
 paypal.addEventListener("click", togglePaymentForm);
+document.querySelector(".breadcrumbs").addEventListener("click", sendPayment);
+const form = document.querySelector("form");
 
 // PAYMENT OPTION
 function togglePaymentForm() {
@@ -22,6 +24,12 @@ function togglePaymentForm() {
       .classList.add("paymentoptionselected");
     document.querySelector(".creditcardform").classList.add("hidden");
   }
+}
+
+function sendPayment() {
+  console.log(form.elements.paymentoption.value);
+  const paymentoption = form.elements.paymentoption.value;
+  localStorage.setItem("paymentoption", paymentoption);
 }
 
 document.querySelector(".sum-email").textContent =
