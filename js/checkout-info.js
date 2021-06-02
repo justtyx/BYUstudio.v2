@@ -3,6 +3,7 @@ document.querySelector("form").addEventListener("submit", userSubmit);
 
 function userSubmit() {
   console.log("submit");
+  localStorage.setItem("email", form.elements.email.value);
   localStorage.setItem("firstname", form.elements.firstname.value);
   localStorage.setItem("surname", form.elements.surname.value);
   localStorage.setItem("phonenumber", form.elements.phonenumber.value);
