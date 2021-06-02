@@ -1,0 +1,23 @@
+.cart-outer-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.background-div {
+    background-image: url(/img/small-waves-dark-beige-bg.png);
+    grid-column: 2/4;
+}
+
+.cart-card {
+    grid-column: 1/5;
+}
+
+.subtotal-flex {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/5;
+}
+
+button {
+    grid-column: 2/4;
+}
