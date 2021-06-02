@@ -12,7 +12,7 @@
     <section class="ordersummarymobile">
       <div class="mobilesummarycontent">
         <div class="summaryflex">
-          <p><span>See</span> order summary</p>
+          <p><span class="summarytoggletext">See</span> order summary</p>
           <img src="assets/openfat.png" alt="arrow" class="sumarrow" />
         </div>
         <span class="summaryphone hidden"> insert items from cart here </span>
@@ -24,7 +24,7 @@
           <span class="currentcrumb">Information</span> > Payment > Confirmation
         </p>
       </div>
-      <form action="">
+      <form class="infoform" action="">
         <section class="sec-contact">
           <h4>Contact Information</h4>
           <input
@@ -84,14 +84,14 @@
             type="radio"
             id="sameasshippingaddress"
             name="billingaddress"
-            value="same"
+            value="same-address"
           />
           <label for="sameasshippingaddress">Same as shipping address</label>
           <input
             type="radio"
             id="differentshippingaddress"
             name="billingaddress"
-            value="other"
+            value="other-address"
           />
           <label for="differentshippingaddress"
             >Use different billing address</label
@@ -103,26 +103,26 @@
             type="radio"
             id="postnord"
             name="deliveryoption"
-            value="postnord"
+            value="PostNord - DKK 39.00"
           />
           <label for="postnord">PostNord - DKK 39.00</label>
           <input
             type="radio"
             id="pickupspot"
             name="deliveryoption"
-            value="pickupspot"
+            value="Pick up spot - DKK 19.00"
           />
           <label for="pickupspot">Pick up spot - DKK 19.00</label>
           <input
             type="radio"
             id="personalpickup"
             name="deliveryoption"
-            value="personalpickup"
+            value="Personal pick up - Free"
           />
           <label for="personalpickup">Personal pick up - Free</label>
         </section>
         <div class="buttonflex">
-          <button>Continue to Payment</button>
+          <button type="submit">Continue to Payment</button>
           <a href="index.html"> Return to frontpage</a>
         </div>
       </form>
@@ -132,4 +132,5 @@
     </main>
   </body>
   <script src="js/ordersummary.js"></script>
+  <script src="js/checkout-info.js"></script>
 </html>

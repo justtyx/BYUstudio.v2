@@ -6,6 +6,7 @@ function toggleSummary() {
   if (val == 1) {
     document.querySelector(".summaryflex > img").classList.add("rotatearrow");
     document.querySelector(".summaryphone").classList.remove("hidden");
+    document.querySelector(".summarytoggletext").textContent = "Close";
     val = val + 1;
     console.log("open");
   } else if (val == 2) {
@@ -13,6 +14,7 @@ function toggleSummary() {
       .querySelector(".summaryflex > img")
       .classList.remove("rotatearrow");
     document.querySelector(".summaryphone").classList.add("hidden");
+    document.querySelector(".summarytoggletext").textContent = "See";
     val = val - 1;
     console.log("close");
   }
