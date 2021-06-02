@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="ordersummarymobile">
+      <div class="mobilesummarycontent">
+        <div class="summaryflex">
+          <p><span>See</span> order summary</p>
+          <img src="assets/openfat.png" alt="arrow" class="sumarrow" />
+        </div>
+        <span class="summaryphone hidden"> insert items from cart here </span>
+      </div>
+    </section>
+    <main>
+      <div class="breadcrumbs">
+        <p>
+          Information > <span class="currentcrumb">Payment</span> > Confirmation
+        </p>
+      </div>
+      <section class="paymentformdesk">
+        <section class="sec-infosummary">
+          <h4>Information Summary</h4>
+          <div>
+            <div class="summaryflex smallinfo">
+              <p>Contact</p>
+              <p>Change</p>
+            </div>
+            <p class="sum-email">example@gmail.com</p>
+          </div>
+          <div>
+            <div class="summaryflex smallinfo">
+              <p>Shipping Address</p>
+              <p>Change</p>
+            </div>
+            <p class="sum-address">Street, City, Postal Code, Country</p>
+          </div>
+          <div>
+            <div class="summaryflex smallinfo">
+              <p>Shipping Option</p>
+              <p>Change</p>
+            </div>
+            <p class="sum-shipping">PostNord - DKK 39.00</p>
+          </div>
+        </section>
+        <section class="sec-payment">
+          <h4>Payment</h4>
+          <form action="">
+            <div class="cardwrap paymentoptionwrap paymentoptionselected">
+              <input
+                type="radio"
+                id="creditcard"
+                name="paymentoption"
+                value="creditcard"
+                checked="checked"
+              />
+              <label for="creditcard">Credit Card</label>
+            </div>
+            <div class="creditcardform">
+              <input
+                type="number"
+                id="cardnumber"
+                name="cardnumber"
+                placeholder="Card number"
+              />
+              <input
+                type="text"
+                name="nameoncard"
+                id="nameoncard"
+                placeholder="Name on card"
+              />
+              <div class="two-box-flex">
+                <input
+                  type="number"
+                  name="expirationdate"
+                  id="expirationdate"
+                  placeholder="Expiration date"
+                />
+                <input
+                  type="number"
+                  id="securitycode"
+                  class="securitycode"
+                  placeholder="Security code"
+                />
+              </div>
+            </div>
+            <div class="paypalwrap paymentoptionwrap">
+              <input
+                type="radio"
+                id="paypal"
+                name="paymentoption"
+                value="paypal"
+              />
+              <label for="paypal">Paypal</label>
+            </div>
+          </form>
+        </section>
+        <button>Confirm Payment</button>
+      </section>
+      <section class="ordersummarydesktop">
+        <h2>Order Summary</h2>
+      </section>
+    </main>
+  </body>
+  <script src="js/checkout.js"></script>
+</html>

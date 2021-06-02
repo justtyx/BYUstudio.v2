@@ -3,6 +3,12 @@ main {
   margin: 0 2rem 0 2rem;
 }
 
+.smallinfo {
+  font-size: smaller;
+  color: grey;
+  margin-bottom: -1rem;
+}
+
 .ordersummarydesktop {
   display: none;
 }
@@ -57,13 +63,36 @@ input {
   height: 1rem;
 }
 
+/* -------- Payment Form ----------- */
+.paymentoptionwrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  border-radius: 15px 15px 0 0;
+}
+.paymentoptionwrap > label {
+  width: 100%;
+}
+.paymentoptionwrap > input {
+  width: 1.5rem;
+}
+
+.paymentoptionselected {
+  background-color: #ffd800;
+}
+
+.creditcardform {
+  padding: 1rem;
+  border: #ffd800 solid 1px;
+  border-radius: 0 0 15px 15px;
+}
+
 /* ------------ Mobile Summary ----------- */
 .hidden {
   display: none;
-}
-
-.rotatearrow {
-  transform: rotate(-180deg);
 }
 
 .ordersummarymobile {
@@ -82,9 +111,12 @@ input {
 }
 
 .summaryflex > img {
-  transform: rotate(90deg);
   height: 1rem;
   cursor: pointer;
+}
+
+.rotatearrow {
+  transform: rotate(-180deg);
 }
 
 @media only screen and (min-width: 900px) {
@@ -93,7 +125,8 @@ input {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-  form {
+  form,
+  .paymentformdesk {
     grid-column-start: 1;
     grid-column-end: 7;
   }
