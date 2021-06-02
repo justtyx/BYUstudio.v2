@@ -26,23 +26,25 @@
       </div>
       <section class="paymentformdesk">
         <section class="sec-infosummary">
-          <h4>Information Summary</h4>
+          <h3>Information Summary</h3>
           <div>
-            <div class="summaryflex smallinfo">
+            <div class="infosummaryflex smallinfo">
               <p>Contact</p>
               <p>Change</p>
             </div>
             <p class="sum-email">example@gmail.com</p>
           </div>
+          <div class="line"></div>
           <div>
-            <div class="summaryflex smallinfo">
+            <div class="infosummaryflex smallinfo">
               <p>Shipping Address</p>
               <p>Change</p>
             </div>
             <p class="sum-address">Street, City, Postal Code, Country</p>
           </div>
+          <div class="line"></div>
           <div>
-            <div class="summaryflex smallinfo">
+            <div class="infosummaryflex smallinfo">
               <p>Shipping Option</p>
               <p>Change</p>
             </div>
@@ -50,7 +52,7 @@
           </div>
         </section>
         <section class="sec-payment">
-          <h4>Payment</h4>
+          <h3>Payment</h3>
           <form action="">
             <div class="cardwrap paymentoptionwrap paymentoptionselected">
               <input
@@ -101,7 +103,10 @@
             </div>
           </form>
         </section>
-        <button>Confirm Payment</button>
+        <div class="buttonflex">
+          <button>Confirm Payment</button>
+          <a href="checkout-info.html"> Return to information and shipping</a>
+        </div>
       </section>
       <section class="ordersummarydesktop">
         <h2>Order Summary</h2>
@@ -109,4 +114,5 @@
     </main>
   </body>
   <script src="js/checkout.js"></script>
+  <script src="js/ordersummary.js"></script>
 </html>

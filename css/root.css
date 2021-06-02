@@ -30,7 +30,7 @@ img {
 }
 
 p {
-  line-height: var(--line-height);
+  /* line-height: var(--line-height); */
 }
 
 h2 {

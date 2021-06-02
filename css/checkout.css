@@ -3,6 +3,23 @@ main {
   margin: 0 2rem 0 2rem;
 }
 
+/* section {
+  border-bottom: 2rem;
+} */
+
+.buttonflex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.buttonflex a {
+  font-size: small;
+  text-align: center;
+  color: black;
+}
+
 .smallinfo {
   font-size: smaller;
   color: grey;
@@ -90,6 +107,18 @@ input {
   border-radius: 0 0 15px 15px;
 }
 
+.sec-infosummary > h3 {
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 /* ------------ Mobile Summary ----------- */
 .hidden {
   display: none;
@@ -108,6 +137,14 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.infosummaryflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -1.5rem;
+  margin-top: -0.5rem;
 }
 
 .summaryflex > img {
