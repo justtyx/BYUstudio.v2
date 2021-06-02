@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="ordersummarymobile">
+      <div class="mobilesummarycontent">
+        <div class="summaryflex">
+          <p><span>See</span> order summary</p>
+          <img src="assets/openfat.png" alt="arrow" />
+        </div>
+        <span class="summaryphone hidden"> insert items from cart here </span>
+      </div>
+    </section>
+    <main>
+      <div class="breadcrumbs">
+        <p>
+          <span class="currentcrumb">Information</span> > Payment > Confirmation
+        </p>
+      </div>
+      <form action="">
+        <section class="sec-contact">
+          <h4>Contact Information</h4>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+        </section>
+        <section class="sec-shippinginfo">
+          <h4>Shipping Information</h4>
+          <div class="two-box-flex">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Surname"
+            />
+          </div>
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Telephone number"
+          />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Address (Street, Number)"
+          />
+          <div class="two-box-flex">
+            <input type="text" name="city" id="city" placeholder="City" />
+            <input
+              type="number"
+              name="postalcode"
+              id="postalcode"
+              placeholder="Postal Code"
+            />
+          </div>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
+          />
+        </section>
+        <section class="sec-billingaddress">
+          <h4>Billing Address</h4>
+          <input
+            type="radio"
+            id="sameasshippingaddress"
+            name="billingaddress"
+            value="same"
+          />
+          <label for="sameasshippingaddress">Same as shipping address</label>
+          <input
+            type="radio"
+            id="differentshippingaddress"
+            name="billingaddress"
+            value="other"
+          />
+          <label for="differentshippingaddress"
+            >Use different billing address</label
+          >
+        </section>
+        <section class="sec-deliveryoption">
+          <h4>Delivery Option</h4>
+          <input
+            type="radio"
+            id="postnord"
+            name="deliveryoption"
+            value="postnord"
+          />
+          <label for="postnord">PostNord - DKK 39.00</label>
+          <input
+            type="radio"
+            id="pickupspot"
+            name="deliveryoption"
+            value="pickupspot"
+          />
+          <label for="pickupspot">Pick up spot - DKK 19.00</label>
+          <input
+            type="radio"
+            id="personalpickup"
+            name="deliveryoption"
+            value="personalpickup"
+          />
+          <label for="personalpickup">Personal pick up - Free</label>
+        </section>
+        <button>Continue to Payment</button>
+      </form>
+      <section class="ordersummarydesktop">
+        <h2>Order Summary</h2>
+      </section>
+    </main>
+  </body>
+  <script src="js/checkout.js"></script>
+</html>
