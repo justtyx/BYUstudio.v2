@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/root.css" />
   <link rel="stylesheet" href="css/inspiration.css" />
   <link rel="stylesheet" href="css/cart.css" />
   <title>Get inspired | BYU Studio</title>
@@ -12,28 +13,29 @@
 
 <body>
   <header>
-    <div class="p">Nav bar here</div>
     <div class="cart-outer-box">
+      <!-- remake into divs? ↓ -->
       <p>X</p>
-      <div class="background-div"></div>
-      <h1>Cart</h1>
+      <h1 class="page-title">Cart</h1>
       <section class="cart-card">
-        <img src="" alt="">
-        <h3>Title</h3>
-        <p>Some details</p>
-        <p>DKK <span>price</span></p>
-        <p>X</p>
+        <div class="cart-img-item-container">
+          <img src="assets/bgg 1.jpg" alt=""></div>
+        <h3 class="cart-item-name">Title</h3>
+        <p class="cart-item-description">Some details</p>
+        <p class="cart-item-price">DKK <span>300.00</span></p>
+        <!-- remake into divs? ↓ -->
+        <p class="remove-item">X</p>
         <div class="quantity-outer-box">
-          <p>+</p>
-          <p>1</p>
           <p>-</p>
+          <input type="number" min="1" value="1" class="cart-item-quantity">
+          <p>+</p>
         </div>
       </section>
       <div class="subtotal-flex">
         <h3>Subtotal</h3>
-        <p>DKK <span>price</span></p>
+        <p>DKK <span>300.00</span></p>
       </div>
-      <button>Proceed to checkout</button>
+      <button class="cart-to-checkout">Proceed to checkout</button>
     </div>
   </header>
   <main></main>
