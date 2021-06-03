@@ -10,8 +10,8 @@ nav > a > img {
 }
 
 body {
-  width: 86vw;
-  overflow-x: hidden;
+  width: 86vw !important;
+  overflow-x: hidden !important;
 }
 /*HERO*/
 #hero {
@@ -47,6 +47,7 @@ h1 {
 
 #background {
   position: absolute;
+  display: none;
   right: 0;
   z-index: -3;
   margin-right: var(--theNumber);
@@ -149,6 +150,7 @@ h4 {
   left: 17vw;
   z-index: -1;
   width: 50vw;
+  display: none;
 }
 
 #ksmallerImg {
@@ -302,6 +304,9 @@ a {
 }
 
 @media only screen and (max-width: 530px) {
+  nav > a > img {
+    width: 80%;
+  }
   /* HERO */
   #hero {
     position: unset;
@@ -319,17 +324,23 @@ a {
     position: unset;
   }
 
+  #yellowText {
+    position: unset;
+  }
   /* Video */
   #video {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 5vw;
   }
 
   #video > article {
     align-self: unset;
   }
-
+  #videoPar {
+    width: 86vw !important;
+  }
   video {
     width: 86vw;
   }
@@ -354,19 +365,16 @@ a {
 
   #kitsText {
     position: relative;
-    left: 5px;
-    width: 25vw;
+    width: 60vw;
   }
 
   #kbiggerImg {
-    position: unset;
-    left: 17vw;
+    left: unset;
+    right: 0;
     z-index: -1;
     width: 50vw;
-  }
-
-  #kits {
-    position: unset;
+    top: 10vw;
+    transform: scale(1.5);
   }
 
   /* sustain  */
@@ -375,20 +383,91 @@ a {
   }
 
   #sustainText {
-    position: relative;
-    right: 5px;
-    width: 25vw;
+    position: absolute;
+    right: 7vw;
+    width: 61vw;
   }
 
   #sbiggerImg {
-    position: unset;
-    right: 17vw;
+    left: 0;
     z-index: -1;
     width: 50vw;
+    transform: scale(1.5);
   }
 
   #sustain {
     position: unset;
     margin-left: 7vw;
+  }
+
+  /*pinterest*/
+  #pinterest {
+    margin-top: 120vw;
+    flex-direction: column;
+  }
+  #pinterest > img {
+    position: unset;
+    width: unset;
+    padding: 0vw 7vw;
+  }
+
+  #pinterest > div > p {
+    width: unset;
+  }
+  /*footer*/
+  footer {
+    padding: 5vw 0vw;
+  }
+  #description {
+    width: unset;
+  }
+  h5 {
+    font-size: var(--body-copy-m);
+  }
+  #legal > a {
+    font-size: var(--button-copy-m);
+  }
+
+  #legal {
+    text-align: center;
+  }
+
+  #trustpilot {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  footer > #some > img {
+    padding: 1vw;
+  }
+  /*general*/
+  h1 {
+    font-size: var(--h1-m);
+    width: 86vw;
+  }
+
+  h2 {
+    font-size: var(--h2-m);
+  }
+
+  h3 {
+    font-size: var(--h3-m);
+  }
+
+  h4 {
+    font-size: var(--h4-m);
+  }
+
+  p,
+  li,
+  a {
+    font-size: var(--body-copy-m);
+    line-height: 2rem;
+  }
+
+  button {
+    font-size: var(--button-copy-m);
+    padding: 2.5vw 5vw;
+    border-radius: 5px;
   }
 }
