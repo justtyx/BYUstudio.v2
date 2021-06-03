@@ -6,15 +6,24 @@
 :root {
   --yellow: #ffd800;
   --beige: #e1a089;
-
+  /*desktop*/
   --h1-d: 4.6vw;
   --h2-d: 3.981vw;
   --h3-d: 3.318vw;
-
+  --body-copy: 1.111vw;
   --line-height: 1.8vw;
+  --button-copy: 0.972vw;
 
-  --margin: 0vw 0vw 6.944vw;
+  --margin: 0vw 6.944vw 0vw;
   --theNumber: -6.944vw;
+
+  /*mobile*/
+  --h1-m: 10.427vw;
+  --h2-m: 8.853vw;
+  --h3-m: 7.373vw;
+  --h4-m: 6.24vw;
+  --body-copy-m: 4.267vw;
+  --button-copy-m: 3.733vw;
 
   --shadow: rgba(0, 0, 0, 0.1) 2px 4px 11px 0px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -29,17 +38,13 @@ img {
   max-width: 100%;
 }
 
-p {
-  /* line-height: var(--line-height); */
-}
-
 h2 {
   font-size: var(--h2-d);
 }
 
 button {
   padding: 0.8vw 2vw;
-  font-size: 14px;
+  font-size: var(--button-copy);
   border: none;
   background-color: var(--beige);
   color: white;

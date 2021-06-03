@@ -4,6 +4,15 @@ nav {
   align-items: center;
   margin-top: 2vw;
 }
+
+nav > a > img {
+  width: 100%;
+}
+
+body {
+  width: 86vw !important;
+  overflow-x: hidden !important;
+}
 /*HERO*/
 #hero {
   position: relative;
@@ -17,14 +26,14 @@ nav {
 
 #yellowText {
   position: absolute;
-  top: 5.5vw;
+  top: -6vw;
   left: 20vw;
+  width: 40%;
 }
 
 h1 {
   font-size: var(--h1-d);
   position: absolute;
-  right: left;
   width: 50vw;
   z-index: 1;
 }
@@ -36,6 +45,15 @@ h1 {
   width: 60vw;
 }
 
+#background {
+  position: absolute;
+  right: 0;
+  z-index: -3;
+  margin-right: var(--theNumber);
+  transform: scale(1.6);
+  top: 9vw;
+  width: 55%;
+}
 /*Video*/
 
 #video {
@@ -43,6 +61,7 @@ h1 {
   grid-template-columns: auto auto;
   gap: 4vw;
   margin-top: 50vw;
+  border-radius: 0.486vw;
 }
 
 #video > article {
@@ -90,6 +109,10 @@ video {
   align-items: center;
 }
 
+.oneStep > img {
+  width: 20%;
+}
+
 .oneStep > p {
   text-align: center;
 }
@@ -133,7 +156,7 @@ h4 {
   left: 67.5vw;
   width: 27.5vw;
   z-index: -1;
-  top: 13vw;
+  top: 13.6vw;
 }
 
 /* sustain  */
@@ -165,7 +188,7 @@ h4 {
   right: 67.5vw;
   width: 27.5vw;
   z-index: -1;
-  top: 13vw;
+  top: 14.1vw;
 }
 
 /* pinterest  */
@@ -207,6 +230,15 @@ h4 {
   margin: 3vw 0vw;
 }
 
+#trustpilot > div {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#trustpilot > div > img {
+  width: 100%;
+}
 /* footer */
 
 footer {
@@ -235,7 +267,7 @@ footer > img {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: var(--button-copy);
   font-weight: 500;
 }
 ul {
@@ -255,4 +287,193 @@ a {
 
 #legal {
   margin: 2vw 0vw;
+}
+
+#footerNav > ul > li:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+#footerNav > ul > li {
+  font-size: var(--button-copy);
+}
+
+#legal > a {
+  font-size: var(--button-copy);
+}
+
+@media only screen and (max-width: 530px) {
+  nav > a > img {
+    width: 80%;
+  }
+  /* HERO */
+  #hero {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #heroImg {
+    position: unset;
+    width: 86vw;
+  }
+
+  h1 {
+    font-size: var(--h1-d);
+    position: unset;
+  }
+
+  #yellowText {
+    position: unset;
+  }
+  /* Video */
+  #video {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 5vw;
+  }
+
+  #video > article {
+    align-self: unset;
+  }
+  #videoPar {
+    width: 86vw !important;
+  }
+  video {
+    width: 86vw;
+  }
+
+  /* steps */
+  #steps {
+    height: auto;
+    padding: 8vw 0vw;
+  }
+
+  #stepsWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0vw 13vw;
+    gap: 5vw;
+  }
+
+  /* Kits */
+  #ksmallerImg {
+    display: none;
+  }
+
+  #kitsText {
+    position: relative;
+    width: 60vw;
+  }
+
+  #kbiggerImg {
+    left: unset;
+    right: 0;
+    z-index: -1;
+    width: 50vw;
+    top: 10vw;
+    transform: scale(1.5);
+  }
+
+  /* sustain  */
+  #ssmallerImg {
+    display: none;
+  }
+
+  #sustainText {
+    position: absolute;
+    right: 7vw;
+    width: 61vw;
+  }
+
+  #sbiggerImg {
+    left: 0;
+    z-index: -1;
+    width: 50vw;
+    transform: scale(1.5);
+  }
+
+  #sustain {
+    position: unset;
+    margin-left: 7vw;
+  }
+
+  /*pinterest*/
+  #pinterest {
+    margin-top: 120vw;
+    flex-direction: column;
+  }
+  #pinterest > img {
+    position: unset;
+    width: unset;
+    padding: 0vw 7vw;
+  }
+
+  #pinterest > div > p {
+    width: unset;
+  }
+  /*footer*/
+  footer {
+    padding: 5vw 0vw;
+  }
+  #description {
+    width: unset;
+  }
+  h5 {
+    font-size: var(--body-copy-m);
+  }
+  #legal > a {
+    font-size: var(--button-copy-m);
+  }
+
+  #legal {
+    text-align: center;
+  }
+
+  #trustpilot {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  footer > #some > img {
+    padding: 1vw;
+  }
+  /*general*/
+  h1 {
+    font-size: var(--h1-m);
+    width: 86vw;
+  }
+
+  h2 {
+    font-size: var(--h2-m);
+  }
+
+  h3 {
+    font-size: var(--h3-m);
+  }
+
+  h4 {
+    font-size: var(--h4-m);
+  }
+
+  p,
+  li,
+  a {
+    font-size: var(--body-copy-m);
+    line-height: 2rem;
+  }
+
+  button {
+    font-size: var(--button-copy-m);
+    padding: 2.5vw 5vw;
+    border-radius: 5px;
+  }
+
+  #kbiggerImage {
+    display: none;
+  }
+
+  #background {
+    display: none;
+  }
 }
