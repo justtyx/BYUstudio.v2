@@ -47,7 +47,6 @@ h1 {
 
 #background {
   position: absolute;
-  display: none;
   right: 0;
   z-index: -3;
   margin-right: var(--theNumber);
@@ -150,7 +149,6 @@ h4 {
   left: 17vw;
   z-index: -1;
   width: 50vw;
-  display: none;
 }
 
 #ksmallerImg {
@@ -469,5 +467,13 @@ a {
     font-size: var(--button-copy-m);
     padding: 2.5vw 5vw;
     border-radius: 5px;
+  }
+
+  #kbiggerImage {
+    display: none;
+  }
+
+  #background {
+    display: none;
   }
 }
