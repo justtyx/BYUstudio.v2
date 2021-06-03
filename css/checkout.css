@@ -7,6 +7,10 @@ main {
   border-bottom: 2rem;
 } */
 
+.space {
+  padding-bottom: 0.8rem;
+}
+
 .buttonflex {
   display: flex;
   flex-direction: column;
@@ -188,8 +192,11 @@ input {
 }
 
 .reciept-text-wrap {
-  margin: 0 1rem;
-  padding-bottom: 2rem;
+  /* margin: 0 1rem; */
+  padding-bottom: 4rem;
+  width: min(100% - 2rem, 25rem);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 900px) {
@@ -226,5 +233,19 @@ input {
   .breadcrumbs {
     grid-column-start: 1;
     grid-column-end: end;
+  }
+
+  .sec-reciept {
+    grid-column-start: 8;
+    grid-column-end: end;
+  }
+  .sec-thankyou {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .button-reciept {
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
 }
