@@ -3,6 +3,11 @@
   font-family: "Autography";
   src: url("assets/Autography.otf"), format("otf");
 }
+
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --yellow: #ffd800;
   --beige: #e1a089;
