@@ -20,6 +20,9 @@ body {
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 11px 0px,
         rgba(0, 0, 0, 0.06) -2px 0px 4px -1px;
+
+    transform: translateX(100%);
+    transition: transform ease-out 250ms;
 }
 
 .cart-outer-card {
@@ -146,4 +149,15 @@ input.cart-item-quantity::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number].cart-item-quantity {
     -moz-appearance: textfield;
+}
+
+/*sliding style*/
+
+.toggle-btn {
+    cursor: pointer;
+}
+
+.cart-is-open {
+    transform: translateX(0);
+    overflow-y: hidden;
 }
