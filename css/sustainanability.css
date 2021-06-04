@@ -6,9 +6,10 @@ body {
   margin: 0;
   height: 100vh;
   width: min(100vw, 350px);
-  background-color: white;
+  background-color: #e1a089;
   position: absolute;
   top: 0;
+  left: max(-100vw, -350px);
   box-shadow: 4px 0px 20px -1px rgba(0, 0, 0, 0.25);
   transition: 1s;
 }
@@ -22,8 +23,8 @@ body {
 .head-hamburger {
   height: 4rem;
   width: min(100vw, 350px);
-  background-image: url(../assets/fat-yellow-lines.svg);
-  background-size: cover;
+  /* background-image: url(../assets/fat-yellow-lines.svg);
+  background-size: cover; */
   display: flex;
   align-items: center;
   position: absolute;
@@ -43,11 +44,11 @@ body {
   align-content: center;
   height: 100vh;
   width: min(100vw, 350px);
-  color: #e1a089;
+  color: white;
 }
 
 .body-hamburger a {
-  color: #e1a089;
+  color: white;
   text-decoration: none;
 }
 
@@ -94,4 +95,83 @@ body {
 .close {
   transform: translateX(min(-100vw, -350px));
   transition: 1s;
+}
+
+.open {
+  transform: translateX(min(100vw, 350px));
+}
+
+/*---------------desktop pages-----------------*/
+.big-pages {
+  height: 100vh;
+  width: min(calc(100vw - min(100vw, 350px)), 350px);
+  background-color: white;
+  position: absolute;
+  left: min(100vw, 350px);
+  top: 0;
+  box-shadow: 4px 0px 20px -1px rgba(0, 0, 0, 0.25);
+}
+
+.big-pages-body-flex {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  height: 100vh;
+}
+
+.big-pages-body {
+}
+
+.big-pages h2 {
+  color: black;
+  font-size: 1rem;
+}
+
+.ham-cat-image {
+  border-radius: 5px;
+  width: 12rem;
+}
+
+.ham-cat-arrow {
+  height: 2rem;
+}
+
+.big-pages a {
+  display: flex;
+  flex-direction: column;
+  margin: -1rem 3rem;
+  width: 14rem;
+}
+
+.big-link-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 1rem;
+  transform: translateY(-1.5rem);
+}
+
+.big-pages-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* background-image: url(../assets/fat-yellow-lines.svg);
+  background-size: cover; */
+}
+
+.big-pages-header-logo {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.big-pages-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  color: black;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
 }
