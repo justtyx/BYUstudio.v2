@@ -36,8 +36,8 @@ contentstring.forEach((element) => {
   cloneD.querySelector(
     ".cartproductprice"
   ).textContent = `${element.price} DKK`;
-  cloneD.querySelector(".cartproductdescription").textContent =
-    element.description;
+  // cloneD.querySelector(".cartproductdescription").textContent =
+  //   element.description;
   // grab the parent
   const parentD = document.querySelector(".templateparent-desktop");
   // apend
