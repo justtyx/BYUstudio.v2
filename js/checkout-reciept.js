@@ -10,6 +10,9 @@ document.querySelector(".sum-shipping").textContent =
 
 document.querySelector(".breadcrumbs").addEventListener("click", sendData);
 
+const stringbasket = JSON.parse(localStorage.getItem("basket"));
+console.log(stringbasket);
+
 function sendData(e) {
   e.preventDefault();
 
@@ -25,6 +28,7 @@ function sendData(e) {
     billingaddress: localStorage.getItem("billingaddress"),
     deliveryoption: localStorage.getItem("deliveryoption"),
     paymentoption: localStorage.getItem("paymentoption"),
+    basket: stringbasket,
   };
 
   fetch("https://kea21-7e1e.restdb.io/rest/purchase", {
@@ -44,3 +48,29 @@ function sendData(e) {
       console.error(err);
     });
 }
+
+const contents = localStorage.getItem("basket");
+const contentstring = JSON.parse(contents);
+
+contentstring.forEach((element) => {
+  console.log(element);
+
+  //DESKTOP
+  // grab the template
+  const templateD = document.querySelector(".template-desktop").content;
+  // clone the template
+  const cloneD = templateD.cloneNode(true);
+  // change the content
+  cloneD.querySelector(".cartproductname").textContent = element.name;
+  cloneD.querySelector(
+    ".cartproductprice"
+  ).textContent = `${element.price} DKK`;
+  // cloneD.querySelector(".cartproductdescription").textContent =
+  //   element.description;
+  // grab the parent
+  const parentD = document.querySelector(".templateparent-desktop");
+  // apend
+  parentD.appendChild(cloneD);
+  // document.querySelector(".ordersummarydesktop .calctotalprice").textContent =
+  //   "";
+});

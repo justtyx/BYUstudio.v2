@@ -15,7 +15,34 @@
           <p><span class="summarytoggletext">See</span> order summary</p>
           <img src="assets/openfat.png" alt="arrow" class="sumarrow" />
         </div>
-        <span class="summaryphone hidden"> insert items from cart here </span>
+        <span class="summaryphone hidden">
+          <div class="templateparent-mobile">
+            <template class="template-mobile">
+              <div class="cartitem">
+                <img class="cartproductimage" src="" alt="product image" />
+                <div class="cartproducttext">
+                  <div>
+                    <p class="cartproductname">Product Name</p>
+                    <!-- <p class="cartproductdescription">product description</p> -->
+                  </div>
+                  <p class="cartproductprice"><span>234</span> DKK</p>
+                </div>
+                <img
+                  class="crossproduct"
+                  src="assets/cross.png"
+                  alt="cross for removing item"
+                />
+              </div>
+            </template>
+          </div>
+          <div>
+            <div class="divider"></div>
+            <div class="totalprice">
+              <p>Total:</p>
+              <p class="calctotalprice">DKK 123.00</p>
+            </div>
+          </div>
+        </span>
       </div>
     </section>
     <main>
@@ -111,7 +138,35 @@
         </section>
       </section>
       <section class="ordersummarydesktop">
-        <h2>Order Summary</h2>
+        <div class="ordersummarydesktopcontent">
+          <h2>Order Summary</h2>
+          <div class="templateparent-desktop">
+            <template class="template-desktop">
+              <div class="cartitem">
+                <img class="cartproductimage" src="" alt="product image" />
+                <div class="cartproducttext">
+                  <div>
+                    <p class="cartproductname">Product Name</p>
+                    <!-- <p class="cartproductdescription">product description</p> -->
+                  </div>
+                  <p class="cartproductprice"><span>234</span> DKK</p>
+                </div>
+                <img
+                  class="crossproduct"
+                  src="assets/cross.png"
+                  alt="cross for removing item"
+                />
+              </div>
+            </template>
+          </div>
+          <div>
+            <div class="divider"></div>
+            <div class="totalprice">
+              <p>Total:</p>
+              <p class="calctotalprice">DKK 123.00</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="small-footer-wrap">
