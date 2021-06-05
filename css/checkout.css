@@ -1,7 +1,7 @@
 /*delete later when a global margin is set*/
-main {
+/* main {
   margin: 0 2rem 0 2rem;
-}
+} */
 
 /* section {
   border-bottom: 2rem;
@@ -90,7 +90,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   column-gap: 2rem;
-  width: calc(100% - 2rem);
+  /* width: calc(100% - 2rem); */
   padding: 1rem;
   border-radius: 15px 15px 0 0;
 }
@@ -130,7 +130,7 @@ input {
 
 .ordersummarymobile {
   background: #96d3c1;
-  margin-bottom: 2rem;
+  margin: 0 -6.944vw 2rem -6.944vw;
 }
 
 .mobilesummarycontent {
@@ -199,6 +199,23 @@ input {
   margin-right: auto;
 }
 
+/* -------------- FOOTER -------------- */
+footer {
+  background-image: url(../assets/bgg\ 1.jpg);
+  margin: 2rem -6.944vw -0.9rem -6.944vw;
+}
+
+footer p {
+  font-size: small;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 900px) {
   main {
     display: grid;
@@ -221,7 +238,7 @@ input {
     background: #96d3c1;
     grid-column-start: 8;
     grid-column-end: end;
-    margin: 1rem -2rem 0 0;
+    margin: 1rem -6.944vw 0 0;
   }
 
   .ordersummarydesktop > h2 {
