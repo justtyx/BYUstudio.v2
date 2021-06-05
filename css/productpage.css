@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumbs.flex-container {
+    justify-content: flex-start;
+}
+
+.product-image {
+    margin-top: 2rem;
+    border-radius: 7px;
+}
+
+/*mobile media queries*/
+@media (max-width: 770px) {
+    /*Adding a photo under the nav bar*/
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    }
