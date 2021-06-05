@@ -89,12 +89,8 @@ img.remove-cart-item {
     padding: 0.3rem;
 }
 
-.quantity-outer-box>img {
-    width: 10px;
-}
-
-img.remove-cart-item {
-    width: 13px;
+img.remove-cart-item, .quantity-outer-box>img {
+    width: 20px;
 }
 
 .close-cart {
