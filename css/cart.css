@@ -1,23 +1,163 @@
-.cart-outer-box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+body {
+    background-color: white;
 }
 
-.background-div {
-    background-image: url(/img/small-waves-dark-beige-bg.png);
+.page-title {
+    text-align: center;
     grid-column: 2/4;
 }
 
-.cart-card {
+.cart-outer-box {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 500px;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 11px 0px,
+        rgba(0, 0, 0, 0.06) -2px 0px 4px -1px;
+
+    transform: translateX(100%);
+    transition: transform ease-out 250ms;
+}
+
+.cart-outer-card {
     grid-column: 1/5;
+}
+
+.cart-card {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 2fr 2fr 1fr;
+    gap: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+    max-height: 10rem;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    margin-top: 1rem;
+}
+
+.cart-img-item-container {
+    grid-area: 1 / 1 / 4 / 2;
+    overflow: hidden;
+}
+
+.cart-img-item-container>img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+.cart-item-name,
+.cart-item-description,
+.cart-item-price {
+    grid-column: 2/3;
+    margin: 0.2rem 0;
+}
+
+.cart-item-name {
+    align-self: start;
+}
+
+.cart-item-description {
+    align-self: center;
+}
+
+.cart-item-price {
+    align-self: end;
+}
+
+.remove-cart-item {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-self: end;
+}
+
+.quantity-outer-box {
+    display: flex;
+    align-items: end;
+    justify-self: center;
+}
+
+.quantity-outer-box>img,
+img.remove-cart-item {
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.quantity-outer-box>img {
+    width: 10px;
+}
+
+img.remove-cart-item {
+    width: 13px;
+}
+
+.close-cart {
+    width: 1.3rem;
+    height: auto;
+    cursor: pointer;
 }
 
 .subtotal-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     grid-column: 1/5;
 }
 
-button {
+a.cart-to-checkout {
     grid-column: 2/4;
+    align-self: center;
+    cursor: pointer;
+}
+
+a.cart-to-checkout>button {
+    cursor: pointer;
+}
+
+.cart-plus {
+    background-color: white;
+    border: 2px solid white;
+    filter: invert(1);
+}
+
+.cart-minus {
+    background-color: white;
+    border: 2px solid black;
+}
+
+input.cart-item-quantity {
+    text-align: center;
+    border: none;
+    height: 15px;
+    width: 20px;
+}
+
+/*Source: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
+/* Chrome, Safari, Edge, Opera */
+input.cart-item-quantity::-webkit-outer-spin-button,
+input.cart-item-quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number].cart-item-quantity {
+    -moz-appearance: textfield;
+}
+
+/*sliding style*/
+
+.toggle-btn {
+    cursor: pointer;
+}
+
+.cart-is-open {
+    transform: translateX(0);
+    overflow-y: hidden;
 }

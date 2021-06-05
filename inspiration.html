@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/root.css" />
   <link rel="stylesheet" href="css/inspiration.css" />
   <link rel="stylesheet" href="css/cart.css" />
   <title>Get inspired | BYU Studio</title>
@@ -12,32 +14,62 @@
 
 <body>
   <header>
-    <div class="p">Nav bar here</div>
     <div class="cart-outer-box">
-      <p>X</p>
-      <div class="background-div"></div>
-      <h1>Cart</h1>
-      <section class="cart-card">
-        <img src="" alt="">
-        <h3>Title</h3>
-        <p>Some details</p>
-        <p>DKK <span>price</span></p>
-        <p>X</p>
-        <div class="quantity-outer-box">
-          <p>+</p>
-          <p>1</p>
-          <p>-</p>
-        </div>
+      <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart">
+      <h1 class="page-title">Cart</h1>
+      <section class="cart-outer-card">
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt=""></div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item">
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus">
+            <input type="number" min="1" value="1" class="cart-item-quantity">
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus">
+          </div>
+        </section>
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt=""></div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item">
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus">
+            <input type="number" min="1" value="1" class="cart-item-quantity">
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus">
+          </div>
+        </section>
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt=""></div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item">
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus">
+            <input type="number" min="1" value="1" class="cart-item-quantity">
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus">
+          </div>
+        </section>
       </section>
       <div class="subtotal-flex">
         <h3>Subtotal</h3>
-        <p>DKK <span>price</span></p>
+        <p>DKK <span>300.00</span></p>
       </div>
-      <button>Proceed to checkout</button>
+      <a href="#" class="cart-to-checkout"><button>Proceed to checkout</button></a>
     </div>
   </header>
-  <main></main>
+  <main>
+    <button class="toggle-btn">Cart</button>
+  </main>
   <footer></footer>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>
