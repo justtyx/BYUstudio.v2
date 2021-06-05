@@ -10,3 +10,5 @@ cartBtn.addEventListener('click', () => {
 closeCartBtn.addEventListener('click', () => {
     document.querySelector('.cart-outer-box').classList.remove('cart-is-open');
 })
+
+//remove item 
