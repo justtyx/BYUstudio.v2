@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vw;
+}
+nav > a > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+  nav > a > img {
+    width: 80%;
+  }
+}
