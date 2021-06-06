@@ -69,23 +69,47 @@ if (localStorage.getItem("deliveryoption") == "Pick up spot - DKK 19.00") {
 
 //ordersummarydesktop
 
-// adding together the prices and sending to local storage
-var shippingprice = document.querySelector(
-  ".calcshippingprice span"
-).textContent;
-var shippingpriceparse = parseFloat(shippingprice);
-var subtotalprice = document.querySelector(".calcsubtotal span").textContent;
-var subtotalpriceparse = parseFloat(subtotalprice);
-const totalpricecalc = shippingpriceparse + subtotalpriceparse;
-document.querySelector(".calctotalprice span").textContent = totalpricecalc;
-document.querySelector(
-  ".ordersummarydesktopcontent .calctotalprice span"
-).textContent = totalpricecalc;
-console.log(totalpricecalc);
+function updatecarttotal() {
+  var cartItemContainer = document.querySelector(".templateparent-desktop");
+  var cartRows = cartItemContainer.getElementsByClassName("cartitem");
+  console.log(cartRows);
+  var total = 0;
+  for (var i = 0; i < 2; i++) {
+    console.log("hello");
+    var cartRow = cartRows[i];
+    console.log(cartRow);
+    var priceElement = cartRow.querySelector(".cartproductprice span");
+    var price = parseFloat(priceElement.innerText);
+    var quantityElement = cartRow.getElementsByClassName(".quantity")[0];
+    var quantity = quantityElement.value;
+    let total = total + price * quantity;
+  }
+  document.querySelector(
+    ".ordersummarydesktopcontent .calcsubtotal span"
+  ).innerText = total;
+  addshipping();
+}
+updatecarttotal();
 
-localStorage.setItem("subtotal", subtotalpriceparse);
-localStorage.setItem("pricetotal", totalpricecalc);
-localStorage.setItem("priceshipping", shippingpriceparse);
+// adding together the prices and sending to local storage
+function addshipping() {
+  var shippingprice = document.querySelector(
+    ".calcshippingprice span"
+  ).textContent;
+  var shippingpriceparse = parseFloat(shippingprice);
+  var subtotalprice = document.querySelector(".calcsubtotal span").textContent;
+  var subtotalpriceparse = parseFloat(subtotalprice);
+  const totalpricecalc = shippingpriceparse + subtotalpriceparse;
+  document.querySelector(".calctotalprice span").textContent = totalpricecalc;
+  document.querySelector(
+    ".ordersummarydesktopcontent .calctotalprice span"
+  ).textContent = totalpricecalc;
+  console.log(totalpricecalc);
+
+  localStorage.setItem("subtotal", subtotalpriceparse);
+  localStorage.setItem("pricetotal", totalpricecalc);
+  localStorage.setItem("priceshipping", shippingpriceparse);
+}
 
 // console.log(totalpricecalc);
 // console.log(localStorage.getItem("surname"));
