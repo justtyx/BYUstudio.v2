@@ -22,10 +22,28 @@ main {
   align-items: center;
 }
 
-/* .productlist {
+.title-and-filter {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* .filter ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
 } */
+
+/* .filter li {
+  margin: 0 1rem;
+} */
+
+.productlist {
+  display: flex;
+  flex-direction: column;
+}
 
 .product {
   display: flex;
@@ -57,9 +75,9 @@ main {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 700px) {
-  /* main {
+  main {
     display: block;
-  } */
+  }
 
   .productlist {
     display: grid;
