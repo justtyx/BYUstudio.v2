@@ -219,7 +219,7 @@
     </div>
     <h2>What is in the kit</h2>
     <p>Item 1, item 2, item 3</p>
-    <h2>Extras</h2>
+    <h2>Extras <span>?</span></h2>
     <div class="flex-container">
       <div class="selection-flex">
         <select name="wax" id="wax">
@@ -232,7 +232,6 @@
         <p>35 DKK</p>
       </div>
       <div class="selection-flex">
-        <!-- <label for="gemstones">Extra gemstone</label> -->
         <select name="gemstones" id="gemstones">
           <option value="no-stone">No extra gemstones</option>
           <option value="red-stone">Red gemstone</option>
@@ -243,14 +242,17 @@
         <p>50 DKK</p>
       </div>
     </div>
-    <form>
+    <form class="prepay-selection">
       <h2>Prepay for casting</h2>
       <input type="radio" id="silver" name="casting" value="silver">
-      <label for="silver">Yes, cast my piece in SILVER</label><br>
+      <label for="silver">Yes, cast my piece in SILVER</label><span>?</span>
+      <p>DKK <span>515</span></p><br>
       <input type="radio" id="gold" name="casting" value="gold">
-      <label for="gold">Yes, cast my piece in GOLD</label><br>
+      <label for="gold">Yes, cast my piece in GOLD</label><span>?</span>
+      <p>DKK <span>515</span></p><br>
       <input type="radio" id="nothing" name="casting" value="nothing">
-      <label for="nothing">I will order casting later</label><br>
+      <label for="nothing">I will order casting later</label><span>?</span>
+      <p>DKK <span>515</span></p><br>
     </form>
     <div class="total-add-container">
       <div class="total-container flex-container">
