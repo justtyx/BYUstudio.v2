@@ -35,11 +35,39 @@ fetch(urlAll, {
     console.error(err);
   });
 
+/* <article class="product">
+          <img
+            src="assets/standard-kit_people.jpg"
+            alt="standard-kit_people"
+            class="img01"
+          />
+          <img src="" alt="" class="img02" />
+          <div class="product-info">
+            <h3 class="product-title">*Product title*</h3>
+            <div class="price-and-arrow">
+              <p class="price"><span>*1000* </span>DKK</p>
+              <img src="assets/arrow-thin.png" alt="arrow-thin" class="arrow" />
+            </div>
+          </div>
+        </article> */
+
 function showProducts(products) {
   console.log(products);
   //grab template
-
+  const template = document.querySelector(".productTemplate").content;
   //clone
-  //adjust stuff
-  //append
+  products.forEach((product) => {
+    console.log(product);
+    const copy = template.cloneNode(true);
+    //adjust stuff
+    copy.querySelector(
+      ".product a"
+    ).href = `productpage.html?id=${product._id}`;
+    copy.querySelector(".img01").src = product.picture[0];
+    copy.querySelector(".product-title").textContent = product.name;
+    copy.querySelector(".price span").textContent = product.price;
+
+    //append
+    document.querySelector(".productlist").appendChild(copy);
+  });
 }
