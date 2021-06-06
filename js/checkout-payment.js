@@ -42,13 +42,37 @@ document.querySelector(".sum-address").textContent = `${localStorage.getItem(
 document.querySelector(".sum-shipping").textContent =
   localStorage.getItem("deliveryoption");
 
-console.log(localStorage.getItem("email"));
-console.log(localStorage.getItem("surname"));
-console.log(localStorage.getItem("firstname"));
-console.log(localStorage.getItem("phonenumber"));
-console.log(localStorage.getItem("address"));
-console.log(localStorage.getItem("city"));
-console.log(localStorage.getItem("postalcode"));
-console.log(localStorage.getItem("country"));
-console.log(localStorage.getItem("billingaddress"));
-console.log(localStorage.getItem("deliveryoption"));
+if (localStorage.getItem("deliveryoption") == "Pick up spot - DKK 19.00") {
+  document.querySelector(".calcshippingprice span").textContent = "19.00";
+} else if (localStorage.getItem("deliveryoption") == "PostNord - DKK 39.00") {
+  document.querySelector(".calcshippingprice span").textContent = "39.00";
+} else if (
+  localStorage.getItem("deliveryoption") == "Personal pick up - Free"
+) {
+  document.querySelector(".calcshippingprice span").textContent = "0";
+}
+
+// adding together the prices and sending to local storage
+var shippingprice = document.querySelector(
+  ".calcshippingprice span"
+).textContent;
+var shippingpriceparse = parseFloat(shippingprice);
+var subtotalprice = document.querySelector(".calcsubtotal span").textContent;
+var subtotalpriceparse = parseFloat(subtotalprice);
+const totalpricecalc = shippingpriceparse + subtotalpriceparse;
+document.querySelector(".calctotalprice span").textContent = totalpricecalc;
+
+localStorage.setItem("subtotal", subtotalpriceparse);
+localStorage.setItem("pricetotal", totalpricecalc);
+localStorage.setItem("priceshipping", shippingpriceparse);
+
+// console.log(totalpricecalc);
+// console.log(localStorage.getItem("surname"));
+// console.log(localStorage.getItem("firstname"));
+// console.log(localStorage.getItem("phonenumber"));
+// console.log(localStorage.getItem("address"));
+// console.log(localStorage.getItem("city"));
+// console.log(localStorage.getItem("postalcode"));
+// console.log(localStorage.getItem("country"));
+// console.log(localStorage.getItem("billingaddress"));
+// console.log(localStorage.getItem("deliveryoption"));
