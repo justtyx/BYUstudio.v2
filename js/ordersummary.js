@@ -67,9 +67,10 @@ contentstring.forEach((element) => {
 //   contentstring[stringlenght - 1].price +
 //   contentstring[stringlenght - 2].price +
 //   contentstring[stringlenght - 3].price;
-// document.querySelector(".ordersummarydesktop .calctotalprice").textContent =
-//   total;
-// document.querySelector(".ordersummarymobile .calctotalprice").textContent =
+// document.querySelector(
+//   ".ordersummarydesktop .calctotalprice span"
+// ).textContent = total;
+// document.querySelector(".ordersummarymobile .calctotalprice span").textContent =
 //   total;
 
 //---------TRYING A BUNCH OF THINGS AND FAILING ---------

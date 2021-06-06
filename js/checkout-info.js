@@ -23,17 +23,17 @@ function userSubmit() {
 //   console.log(form.elements.postalcode.value);
 //   console.log(form.elements.country.value);
 
-//   const payload = {
-//     email: form.elements.email.value,
-//     firstname: form.elements.firstname.value,
-//     lastname: form.elements.surname.value,
-//     phonenumber: form.elements.phonenumber.value,
-//     address: form.elements.address.value,
-//     city: form.elements.city.value,
-//     zip: form.elements.postalcode.value,
-//     country: form.elements.country.value,
-//   };
-//   console.log(JSON.stringify(payload));
+// const payload = {
+//   email: form.elements.email.value,
+//   firstname: form.elements.firstname.value,
+//   lastname: form.elements.surname.value,
+//   phonenumber: form.elements.phonenumber.value,
+//   address: form.elements.address.value,
+//   city: form.elements.city.value,
+//   zip: form.elements.postalcode.value,
+//   country: form.elements.country.value,
+// };
+// console.log(JSON.stringify(payload));
 
 // console.log(localStorage.getItem("surname"));
 // console.log(localStorage.getItem("firstname"));

@@ -8,7 +8,14 @@ document.querySelector(".sum-address").textContent = `${localStorage.getItem(
 document.querySelector(".sum-shipping").textContent =
   localStorage.getItem("deliveryoption");
 
-document.querySelector(".breadcrumbs").addEventListener("click", sendData);
+window.addEventListener("load", sendData);
+
+document.querySelector(".calctotalprice span").textContent =
+  localStorage.getItem("pricetotal");
+document.querySelector(".calcsubtotal span").textContent =
+  localStorage.getItem("subtotal");
+document.querySelector(".calcshippingprice span").textContent =
+  localStorage.getItem("priceshipping");
 
 const stringbasket = JSON.parse(localStorage.getItem("basket"));
 console.log(stringbasket);
