@@ -218,13 +218,14 @@
     </div>
     <h2>What is in the kit</h2>
     <p class="kit-content">Item 1, item 2, item 3</p>
-    <form class="ordering-form">
+    <form name="ordering-form" class="ordering-form">
       <div class="title-form">
         <h2>Extra wax</h2>
         <p class="explanation-box">&nbsp;?&nbsp;</p>
       </div>
       <!-- wax section -->
-      <div class="label-group">
+      <section class="wax-container-to-append"></section>
+      <!-- <div class="label-group">
         <label for="blue-wax" class="wax-selection">
           <input type="checkbox" id="blue-wax" name="blue-wax" value="Blue wax">
           Hard blue wax, 10g<span class="checkmark">
@@ -245,14 +246,16 @@
         </label></span>
         <p class="explanation-box">&nbsp;?&nbsp;</p>
         <p>DKK <span>515</span></p>
-      </div>
+      </div> -->
 
       <!-- prepay selection -->
+
       <div class="title-form">
         <h2>Prepay for casting</h2>
         <p class="explanation-box">&nbsp;?&nbsp;</p>
       </div>
-      <div class="label-group">
+      <section class="casting-container-to-append"></section>
+      <!-- <div class="label-group">
         <label for="silver" class="wax-selection"><input type="radio" id="silver" name="casting" value="silver">
           Yes, cast my piece in SILVER<span class="checkmark radio-btn"></span></label></span>
         <p class="explanation-box">&nbsp;?&nbsp;</p>
@@ -274,9 +277,9 @@
         <div class="total-container flex-container">
           <h2>Your total</h2>
           <p>DKK <span>300</span></p>
-        </div>
-        <div class="align-button">
-          <button class="add-to-cart">Add to cart</button></div>
+        </div> -->
+      <div class="align-button">
+        <button class="add-to-cart">Add to cart</button></div>
       </div>
     </form>
     <div class="additional-info">
@@ -294,9 +297,9 @@
 
   </footer>
   <!-- Wax template ↓ -->
-  <template class="wax-template">
+  <template id="wax-template">
     <div class="label-group">
-      <label for="" class="wax-selection">
+      <label class="wax-selection waxxx">
         <input type="checkbox" id="" name="" value="" class="wax-input">
         <span class="checkmark">
       </label></span>
@@ -305,13 +308,13 @@
     </div>
   </template>
   <!-- Casting template ↓ -->
-  <template class="casting-template">
+  <template id="casting-template">
     <div class="label-group">
       <label for="silver" class="wax-selection casting-selection">
         <input type="radio" id="silver" name="casting" value="silver" class="casting-input">
         Yes, cast my piece in SILVER<span class="checkmark radio-btn"></span></label>
       <p class="explanation-box">&nbsp;?&nbsp;</p>
-      <p>DKK <span>515</span></p>
+      <p>DKK <span class="casting-price">515</span></p>
     </div>
   </template>
   <!-- cart template ↓ -->
@@ -335,5 +338,6 @@
 <script src="js/cart.js"></script>
 <!-- <script src="js/hamburger.js"></script> -->
 <script src="js/product-page-dynamics.js"></script>
+<script src="js/product-page-form-details.js"></script>
 
 </html>
