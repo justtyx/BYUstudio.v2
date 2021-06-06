@@ -145,7 +145,7 @@ function openStart() {
 }
 function closeHam() {
   document.querySelector(".sec-hamburger").classList.remove("open");
-  document.querySelector("body").style.overflow = "visible";
+  // document.querySelector("body").style.overflow = "visible";
   document.querySelector(".big-pages-about").classList.add("hidden");
   document.querySelector(".big-pages-shop").classList.add("hidden");
   document.querySelector(".big-pages-getstarted").classList.add("hidden");
@@ -153,7 +153,7 @@ function closeHam() {
 }
 function openHam() {
   document.querySelector(".sec-hamburger").classList.add("open");
-  document.querySelector("body").style.overflow = "hidden";
+  // document.querySelector("body").style.overflow = "hidden";
   console.log("open");
 }
 
