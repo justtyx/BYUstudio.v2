@@ -204,7 +204,6 @@
             alt="Pinterest logo" /></a>
       </div>
     </section> -->
-    <!-- img+.breadcrumbs>p*3^.top-details>h1+h2>span^^h2*2+p+h2+(button+p)*2+h2+.total-add-container>.total-container>h2+p^^button -->
     <img src="assets/family-kit-box.png" alt="" class="product-image">
     <div class="breadcrumbs flex-container">
       <a href="">
@@ -219,36 +218,60 @@
     </div>
     <h2>What is in the kit</h2>
     <p class="kit-content">Item 1, item 2, item 3</p>
-    <h2>Extra wax <span>?</span></h2>
-    <!-- extras section -->
-    <label for="blue-wax">
-      <input type="checkbox" id="blue-wax" name="blue-wax" value="Blue wax">
-      Hard blue wax, 10g<span class="checkmark"></span><span>?</span>
+    <form class="ordering-form"></form>
+    <div class="title-form">
+      <h2>Extra wax</h2>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+    </div>
+    <!-- wax section -->
+    <section class="wax-selection-container"></section>
+    <!--<div class="label-group">
+      <label for="blue-wax" class="wax-selection">
+        <input type="checkbox" id="blue-wax" name="blue-wax" value="Blue wax">
+        Hard blue wax, 10g<span class="checkmark">
+      </label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
       <p>DKK <span>515</span></p>
-    </label><br>
+    </div>
+    <div class="label-group"><label for="red-wax" class="wax-selection">
+        <input type="checkbox" id="red-wax" name="red-wax" value="Red wax">
+        Soft red wax, 10g<span class="checkmark">
+      </label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>
+    <div class="label-group"><label for="pink-wax" class="wax-selection"><input type="checkbox" id="pink-wax"
+          name="pink-wax" value="Pink wax">Very soft pink wax,
+        10g<span class="checkmark">
+      </label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>-->
 
-    <label for="red-wax">
-      <input type="checkbox" id="red-wax" name="red-wax" value="Red wax">
-      Soft red wax, 10g<span class="checkmark"></span><span>?</span>
-      <p>DKK <span>515</span></p>
-    </label><br>
-
-    <label for="pink-wax"><input type="checkbox" id="pink-wax" name="pink-wax" value="Pink wax">Very soft pink wax,
-      10g<span class="checkmark"></span><span>?</span>
-      <p>DKK <span>515</span></p>
-    </label><br>
     <!-- prepay selection -->
-    <form class="prepay-selection">
+    <div class="title-form">
       <h2>Prepay for casting</h2>
-      <input type="radio" id="silver" name="casting" value="silver">
-      <label for="silver">Yes, cast my piece in SILVER</label><span>?</span>
-      <p>DKK <span>515</span></p><br>
-      <input type="radio" id="gold" name="casting" value="gold">
-      <label for="gold">Yes, cast my piece in GOLD</label><span>?</span>
-      <p>DKK <span>515</span></p><br>
-      <input type="radio" id="nothing" name="casting" value="nothing">
-      <label for="nothing">I will order casting later</label><span>?</span>
-      <p>DKK <span>515</span></p><br>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+    </div>
+    <section class="casting-selection-container"></section>
+    <!--<div class="label-group">
+      <label for="silver" class="wax-selection"><input type="radio" id="silver" name="casting" value="silver">
+        Yes, cast my piece in SILVER<span class="checkmark radio-btn"></span></label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>
+    <div class="label-group">
+      <label for="gold" class="wax-selection"><input type="radio" id="gold" name="casting" value="gold">
+        Yes, cast my piece in GOLD<span class="checkmark radio-btn"></span></label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>
+    <div class="label-group">
+      <label for="nothing" class="wax-selection"><input type="radio" id="nothing" name="casting" value="nothing">
+        I will order casting later<span class="checkmark radio-btn"></span></label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>-->
     </form>
     <div class="total-add-container">
       <div class="total-container flex-container">
@@ -274,7 +297,24 @@
   </footer>
   <!-- Wax template ↓ -->
   <template class="wax-template">
-    <option value="no-wax">No extra wax</option>
+    <div class="label-group">
+      <label for="blue-wax" class="wax-selection">
+        <input type="checkbox" id="blue-wax" name="blue-wax" value="Blue wax">
+        Hard blue wax, 10g<span class="checkmark">
+      </label></span>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>
+  </template>
+  <!-- Casting template ↓ -->
+  <template>
+    <div class="label-group">
+      <label for="silver" class="wax-selection">
+        <input type="radio" id="silver" name="casting" value="silver">
+        Yes, cast my piece in SILVER<span class="checkmark radio-btn"></span></label>
+      <p class="explanation-box">&nbsp;?&nbsp;</p>
+      <p>DKK <span>515</span></p>
+    </div>
   </template>
   <!-- cart template ↓ -->
   <template class="cart-card-template">
