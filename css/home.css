@@ -249,70 +249,7 @@ h4 {
 }
 /* footer */
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0vw var(--theNumber);
-  background-image: url(bg_pattern.jpg);
-  background-size: cover;
-}
-
-footer > img {
-  margin-top: 3vw;
-}
-#description {
-  width: 30vw;
-  text-align: center;
-}
-
-#some {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  margin: 1vw 0vw 2vw;
-}
-
-h5 {
-  font-size: var(--button-copy);
-  font-weight: 500;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#footerNav {
-  display: flex;
-  gap: 4vw;
-  margin-bottom: 1vw;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
-#legal {
-  margin: 2vw 0vw;
-}
-
-#footerNav > ul > li:not(:last-child) {
-  margin-bottom: 1vw;
-}
-
-#footerNav > ul > li {
-  font-size: var(--button-copy);
-}
-
-#legal > a {
-  font-size: var(--button-copy);
-}
-
 @media only screen and (max-width: 530px) {
-  nav > a > img {
-    width: 80%;
-  }
   /* HERO */
   #hero {
     position: unset;
@@ -450,32 +387,13 @@ a {
   #pinterest > div > p {
     width: unset;
   }
-  /*footer*/
-  footer {
-    padding: 5vw 0vw;
-  }
-  #description {
-    width: unset;
-  }
-  h5 {
-    font-size: var(--body-copy-m);
-  }
-  #legal > a {
-    font-size: var(--button-copy-m);
-  }
-
-  #legal {
-    text-align: center;
-  }
+  /*trustpilot*/
 
   #trustpilot {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  footer > #some > img {
-    padding: 1vw;
-  }
   /*general*/
   h1 {
     font-size: var(--h1-m);
