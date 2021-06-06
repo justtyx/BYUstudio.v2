@@ -253,57 +253,77 @@
       <div class="title-and-filter">
         <h2>Shop</h2>
         <section class="filter">
-          <button onclick="document.location='productlist.html?category=kits'">
+          <button onclick="document.location='productlist.html?kits=true'">
             Kits
           </button>
-          <button onclick="document.location='productlist.html'">
+          <button onclick="document.location='productlist.html?refills=true'">
             Refills
           </button>
-          <button onclick="document.location='productlist.html'">
+          <button onclick="document.location='productlist.html?casting=true'">
             Casting
           </button>
         </section>
       </div>
-      <section class="productlist">
-        <article class="product">
-          <img
-            src="assets/standard-kit_people.jpg"
-            alt="standard-kit_people"
-            class="img01"
-          />
-          <img src="" alt="" class="img02" />
-          <div class="product-info">
-            <h3 class="product-title">*Product title*</h3>
-            <div class="price-and-arrow">
-              <p class="price"><span>*1000* </span>DKK</p>
-              <img src="assets/arrow-thin.png" alt="arrow-thin" class="arrow" />
-            </div>
+      <section id="productlist">
+        <template class="productTemplate">
+          <article class="product">
+            <a href="productpage.html">
+              <img src="" alt="" class="img01" />
+              <img src="" alt="" class="img02" />
+              <div class="product-info">
+                <h3 class="product-title">*Product title*</h3>
+                <div class="price-and-arrow">
+                  <p class="price"><span>*1000* </span> DKK</p>
+                  <img
+                    src="assets/arrow-thin.png"
+                    alt="arrow-thin"
+                    class="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </article>
+        </template>
+      </section>
+      <section id="castinglist">
+        <p>
+          Have you already created your wax model? Then it’s time to cast it in
+          precious metal!
+        </p>
+        <p>
+          Pay for casting here and remember to send us your wax model in the
+          prepayed shipping box in your BYÚ Kit.
+        </p>
+        <div class="casting-form">
+          <div class="kit-number">
+            <h3>1. Enter your kit number</h3>
+            <form>
+              <input
+                type="text"
+                name="id"
+                id="id"
+                required
+                placeholder="A3F2S5"
+              />
+            </form>
           </div>
-        </article>
-        <article class="product">
-          <img
-            src="assets/kit-for-two_people.jpg"
-            alt="kit-for-two_people"
-            class="img01"
-          /><img src="" alt="" class="img02" />
-          <h3 class="product-title">*Product title*</h3>
-        </article>
-        <article class="product">
-          <img
-            src="assets/family-kit_people.jpg"
-            alt="family-kit_people"
-            class="img01"
-          /><img src="" alt="" class="img02" />
-          <h3 class="product-title">*Product title*</h3>
-        </article>
-        <article class="product">
-          <img
-            src="assets/family-kit_people.jpg"
-            alt="family-kit_people"
-            class="img01"
-          /><img src="" alt="" class="img02" />
-          <h3 class="product-title">*Product title*</h3>
-        </article>
+          <div class="material">
+            <h3>2. Choose your material</h3>
+            <input type="radio" id="gold" name="material" value="gold" />
+            <label for="gold"
+              ><img src="assets/casting-blur.png" alt="casting in gold" />Cast
+              piece in GOLD</label
+            ><br />
+            <input type="radio" id="silver" name="material" value="silver" />
+            <label for="silver"
+              ><img src="assets/casting-blur.png" alt="casting in silver" />Cast
+              piece in SILVER</label
+            ><br />
+          </div>
+          <div class="comments">
+            <h3>3. Comments and requests</h3>
+          </div>
+        </div>
       </section>
     </main>
   </body>

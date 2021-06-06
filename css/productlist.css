@@ -40,7 +40,7 @@ main {
   margin: 0 1rem;
 } */
 
-.productlist {
+#productlist {
   display: flex;
   flex-direction: column;
 }
@@ -73,7 +73,14 @@ main {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+}
+
+/* CASTINGLIST */
+
+.casting-form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* MEDIA QUERIES */
@@ -83,7 +90,7 @@ main {
     display: block;
   }
 
-  .productlist {
+  #productlist {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-template-rows: 1fr;
@@ -93,7 +100,7 @@ main {
   .product {
     margin-bottom: 0;
   }
-  /* .productlist {
+  /* #productlist {
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -105,4 +112,9 @@ main {
   .product:last-of-type {
     margin: 0;
   } */
+
+  .casting-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
