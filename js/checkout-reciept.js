@@ -28,6 +28,9 @@ function sendData(e) {
     billingaddress: localStorage.getItem("billingaddress"),
     deliveryoption: localStorage.getItem("deliveryoption"),
     paymentoption: localStorage.getItem("paymentoption"),
+    subtotal: localStorage.getItem("subtotal"),
+    pricetotal: localStorage.getItem("pricetotal"),
+    priceshipping: localStorage.getItem("priceshipping"),
     basket: stringbasket,
   };
 
