@@ -205,7 +205,7 @@
       </div>
     </section> -->
     <!-- img+.breadcrumbs>p*3^.top-details>h1+h2>span^^h2*2+p+h2+(button+p)*2+h2+.total-add-container>.total-container>h2+p^^button -->
-    <img src="assets/bgg 1.jpg" alt="" class="product-image">
+    <img src="assets/family-kit-box.png" alt="" class="product-image">
     <div class="breadcrumbs flex-container">
       <a href="">
         <p>Kits</p>
@@ -221,12 +221,17 @@
     <p>Item 1, item 2, item 3</p>
     <h2>Extras</h2>
     <div class="flex-container">
-      <div class="selection-flex">
-        <button>Extra wax</button>
+      <div class="selection-flex"><label for="add-wax">
+          <input type="checkbox" id="add-wax" name="add-wax" value="Extra wax">
+          Extra wax</label>
         <p>35 DKK</p>
       </div>
       <div class="selection-flex">
-        <button>Extra gemstone</button>
+        <label for="gemstones">Extra gemstone</label>
+
+        <select name="gemstones" id="gemstones">
+
+        </select>
         <p>See prices on dropdown</p>
       </div>
     </div>
@@ -251,8 +256,12 @@
   <footer>
 
   </footer>
+  <!-- Gemstone template ↓ -->
+  <template class="gem-template">
+    <option value="red-stone">Volvo</option>
+  </template>
   <!-- cart template ↓ -->
-  <template>
+  <template class="cart-card-template">
     <section class="cart-card">
       <div class="cart-img-item-container">
         <img src="assets/bgg 1.jpg" alt="" />
