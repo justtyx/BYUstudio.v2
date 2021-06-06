@@ -54,20 +54,29 @@ h4 {
   margin-top: -1vw;
 }
 
+#stepByStep {
+  margin-top: 10vw;
+}
+
 @media only screen and (min-width: 770px) {
+  .oneStep:first-child {
+    margin-top: 0vw;
+  }
   #decorative {
     font-size: 4vw;
   }
   p {
     font-size: var(--body-copy);
+    max-width: 54vw;
   }
+
   h2 {
     font-size: var(--h3-d);
     margin: 0;
   }
 
   h4 {
-    font-size: calc(0.8 * var(--h3-d));
+    font-size: calc(0.6 * var(--h3-d));
   }
 
   article {
@@ -91,10 +100,15 @@ h4 {
 
   .oneStep > h4 {
     grid-area: h;
-    margin: 0;
+    margin-top: 0vw;
+    text-align: left;
+    margin-left: 4vw;
   }
 
   .oneStep > p {
     grid-area: p;
+    margin-top: -2vw;
+    text-align: left;
+    margin-left: 4vw;
   }
 }
