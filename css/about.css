@@ -65,6 +65,9 @@ h4 {
   #decorative {
     font-size: 4vw;
   }
+  .oneStep > img {
+    width: 5vw;
+  }
   p {
     font-size: var(--body-copy);
     max-width: 54vw;
