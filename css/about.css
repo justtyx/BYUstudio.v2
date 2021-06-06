@@ -1,3 +1,11 @@
+#thickLines {
+  position: absolute;
+  top: 0;
+  margin-left: var(--theNumber);
+  margin-right: var(--theNumber);
+  z-index: -1;
+}
+
 #title {
   display: flex;
   flex-direction: column;
