@@ -18,6 +18,10 @@ fetch(fetchUrl, {
 function showProduct(product) {
 console.log(product);
 // document.querySelector('.product-image').src = product[0].picture;
+document.querySelector('.category-breadcrumb').textContent = product[0].category;
+document.querySelector('.product-breadcrumb').textContent = product[0].name;
 document.querySelector('.top-details>h1').textContent = product[0].name;
 document.querySelector('.top-details>h2>span').textContent = product[0].price;
+document.querySelector('.kit-content').textContent = product[0].content;
+document.querySelector('.kit-description').innerHTML = product[0].description;
 }
