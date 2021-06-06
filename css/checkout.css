@@ -72,10 +72,6 @@
   max-width: 60%;
 }
 
-.cartproductprice {
-  /* background-color: red; */
-}
-
 .cartproductdescription {
   font-size: small;
 }
@@ -86,11 +82,25 @@
   margin-left: auto;
 }
 
-.totalprice {
+.priceflex {
   display: flex;
   justify-content: space-between;
 }
+.subtotal {
+  margin-top: 1rem;
+}
 
+.subtotal p {
+  margin: 0;
+  font-size: small;
+}
+.shippingprice p {
+  margin: 0.1 0 0 0;
+  font-size: small;
+}
+.totalprice {
+  margin-top: -1rem;
+}
 /* ---------- Bread Crumbs ---------- */
 .breadcrumbs {
   font-size: small;

@@ -35,12 +35,12 @@ function userSubmit() {
 //   };
 //   console.log(JSON.stringify(payload));
 
-console.log(localStorage.getItem("surname"));
-console.log(localStorage.getItem("firstname"));
-console.log(localStorage.getItem("phonenumber"));
-console.log(localStorage.getItem("address"));
-console.log(localStorage.getItem("city"));
-console.log(localStorage.getItem("postalcode"));
-console.log(localStorage.getItem("country"));
-console.log(localStorage.getItem("billingaddress"));
-console.log(localStorage.getItem("deliveryoption"));
+// console.log(localStorage.getItem("surname"));
+// console.log(localStorage.getItem("firstname"));
+// console.log(localStorage.getItem("phonenumber"));
+// console.log(localStorage.getItem("address"));
+// console.log(localStorage.getItem("city"));
+// console.log(localStorage.getItem("postalcode"));
+// console.log(localStorage.getItem("country"));
+// console.log(localStorage.getItem("billingaddress"));
+// console.log(localStorage.getItem("deliveryoption"));
