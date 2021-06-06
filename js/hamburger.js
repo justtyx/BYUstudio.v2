@@ -19,7 +19,7 @@ var togglestart = 1;
 var w;
 
 function openShop() {
-  console.log("shop");
+  // console.log("shop");
   if (w < 750) {
     if (toggleshop == 1) {
       toggleshop++;
@@ -29,9 +29,9 @@ function openShop() {
       document.querySelector(".pages-about").classList.add("hidden");
       document.querySelector(".pages-getstarted").classList.add("hidden");
 
-      console.log(
-        `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
-      );
+      // console.log(
+      //   `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
+      // );
     } else if (toggleshop == 2) {
       toggleshop = 1;
       toggleabout = 1;
@@ -40,9 +40,9 @@ function openShop() {
       document.querySelector(".pages-about").classList.add("hidden");
       document.querySelector(".pages-getstarted").classList.add("hidden");
 
-      console.log(
-        `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
-      );
+      // console.log(
+      //   `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
+      // );
     }
   } else if (w >= 750) {
     if (toggleshop == 1) {
@@ -53,9 +53,9 @@ function openShop() {
       document.querySelector(".big-pages-about").classList.add("hidden");
       document.querySelector(".big-pages-getstarted").classList.add("hidden");
 
-      console.log(
-        `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
-      );
+      // console.log(
+      //   `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
+      // );
     } else if (toggleshop == 2) {
       toggleshop = 1;
       toggleabout = 1;
@@ -64,14 +64,14 @@ function openShop() {
       document.querySelector(".big-pages-about").classList.add("hidden");
       document.querySelector(".big-pages-getstarted").classList.add("hidden");
 
-      console.log(
-        `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
-      );
+      // console.log(
+      //   `shop is ${toggleshop}, about is ${toggleabout}, start is ${togglestart}`
+      // );
     }
   }
 }
 function openAbout() {
-  console.log("About");
+  // console.log("About");
   if (w < 750) {
     if (toggleabout == 1) {
       toggleshop = 1;
@@ -145,19 +145,19 @@ function openStart() {
 }
 function closeHam() {
   document.querySelector(".sec-hamburger").classList.remove("open");
-  document.querySelector("body").style.overflow = "visible";
+  // document.querySelector("body").style.overflow = "visible";
   document.querySelector(".big-pages-about").classList.add("hidden");
   document.querySelector(".big-pages-shop").classList.add("hidden");
   document.querySelector(".big-pages-getstarted").classList.add("hidden");
-  console.log("close");
+  // console.log("close");
 }
 function openHam() {
   document.querySelector(".sec-hamburger").classList.add("open");
-  document.querySelector("body").style.overflow = "hidden";
-  console.log("open");
+  // document.querySelector("body").style.overflow = "hidden";
+  // console.log("open");
 }
 
 function checkWindowsize() {
   w = window.innerWidth;
-  console.log(w);
+  // console.log(w);
 }

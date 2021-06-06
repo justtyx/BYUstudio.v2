@@ -33,9 +33,7 @@ contentstring.forEach((element) => {
   const cloneD = templateD.cloneNode(true);
   // change the content
   cloneD.querySelector(".cartproductname").textContent = element.name;
-  cloneD.querySelector(
-    ".cartproductprice"
-  ).textContent = `${element.price} DKK`;
+  cloneD.querySelector(".cartproductprice").textContent = `${element.price}`;
   // cloneD.querySelector(".cartproductdescription").textContent =
   //   element.description;
   // grab the parent
@@ -51,7 +49,7 @@ contentstring.forEach((element) => {
   const clone = template.cloneNode(true);
   // change the content
   clone.querySelector(".cartproductname").textContent = element.name;
-  clone.querySelector(".cartproductprice").textContent = `${element.price} DKK`;
+  clone.querySelector(".cartproductprice").textContent = `${element.price}`;
   // clone.querySelector(".cartproductdescription").textContent =
   //   element.description;
   // grab the parent
@@ -63,10 +61,43 @@ contentstring.forEach((element) => {
     "";
 });
 
-// console.log(Array.from(document.querySelectorAll(".cartproductprice")));
+// this is just hardcoding the amount of strings
+let stringlenght = contentstring.length;
+let total =
+  contentstring[stringlenght - 1].price +
+  contentstring[stringlenght - 2].price +
+  contentstring[stringlenght - 3].price;
+document.querySelector(".ordersummarydesktop .calctotalprice").textContent =
+  total;
+document.querySelector(".ordersummarymobile .calctotalprice").textContent =
+  total;
+
+//---------TRYING A BUNCH OF THINGS AND FAILING ---------
+
+// document.querySelectorAll(".cartproductprice")
+
+// let test = Array.from(document.querySelectorAll(".cartproductprice").innerHTML);
+// console.log(document.querySelector(".cartproductprice").innerHTML);
+// let priceplace = document.querySelectorAll(".cartproductprice").innerHTML;
+
 //adjust total price
 // var pricearray = ${`.cartproductprice`};
 // var inputs = $(".class1");
 // for (var i = 0; i < pricearray.length; i++) {
 //   alert($(price[i]).val());
 // }
+
+// const totalPrice = {
+//   KEY: "pricekey",
+//   contentsprice: [],
+//   init() {
+//     //_contentsprice is a temporary string
+//     let _contentsprice = localStorage.getItem(basket.price);
+//     console.log(localStorage.getItem(basket.price));
+//     if (_contentsprice) {
+//       //if there is anything turn it into JS objects that we can access with the dot . notation
+//       pricekey.contentsprice = JSON.parse(_contentsprice);
+//     }
+//   },
+// };
+// console.log(totalPrice);
