@@ -7,8 +7,12 @@ nav {
 
 p {
   font-size: var(--body-copy);
+  line-height: var(--line-height);
 }
 
+h2 {
+  margin-bottom: 0;
+}
 nav > a > img {
   width: 100%;
 }
@@ -101,7 +105,8 @@ video {
 
 #steps {
   height: 40.694vw;
-  background-color: var(--yellow);
+  background-image: url("thick-lines-bg.svg");
+  background-size: cover;
   width: 100vw;
   margin: 10vw -6.944vw 0vw -6.944vw;
   display: flex;
@@ -147,7 +152,7 @@ h4 {
   grid-template-columns: auto auto auto;
   position: relative;
   margin-right: var(--theNumber);
-  margin-top: 5vw;
+  margin-top: 10vw;
 }
 
 #kitsText {
@@ -209,7 +214,7 @@ h4 {
   background-color: #ffdcd0;
   width: 100vw;
   height: 100vh;
-  margin: 42vw var(--theNumber) 0vw;
+  margin: 44vw var(--theNumber) 0vw;
   display: flex;
   position: relative;
 }
@@ -246,6 +251,7 @@ h4 {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #trustpilot > div > img {
@@ -384,9 +390,13 @@ a {
 
   #stepsWrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 0vw 13vw;
     gap: 5vw;
+  }
+
+  #steps >  h2 {
+    margin-top: 2vw;
   }
 
   /* Kits */

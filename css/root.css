@@ -16,15 +16,15 @@
   --beige: #e1a089;
   --light-grey: #cccccc;
   --grey: #808080;
-  --minty: #96D3C1;
-  --dark-green: #44A86A;
-  --light-beige: #FFDCD0;
+  --minty: #96d3c1;
+  --dark-green: #44a86a;
+  --light-beige: #ffdcd0;
   /*desktop*/
   --h1-d: 4.6vw;
   --h2-d: 3.981vw;
   --h3-d: 3.318vw;
   --body-copy: 1.111vw;
-  --line-height: 1.8vw;
+  --line-height: 1.8em;
   --button-copy: 0.972rem;
 
   --margin: 0vw 6.944vw 0vw;
