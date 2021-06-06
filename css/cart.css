@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    overflow-x: hidden;
 }
 
 .page-title {
@@ -12,6 +13,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 500px;
+    height: -moz-fit-content;
     height: fit-content;
     min-height: 100vh;
     background-color: white;
@@ -20,7 +22,6 @@ body {
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 11px 0px,
         rgba(0, 0, 0, 0.06) -2px 0px 4px -1px;
-
     transform: translateX(100%);
     transition: transform ease-out 250ms;
 }
@@ -36,7 +37,7 @@ body {
     overflow: hidden;
     padding: 1rem;
     max-height: 10rem;
-    border-bottom: 1px solid hsl(0, 0%, 80%);
+    border-bottom: 1px solid var(--grey);
     margin-top: 1rem;
 }
 

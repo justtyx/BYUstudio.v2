@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Autography";
-  src: url("assets/Autography.otf"), format("otf");
+  src: url("assets/Autography.otf") format("otf");
 }
 
 * {
@@ -14,6 +14,8 @@
 :root {
   --yellow: #ffd800;
   --beige: #e1a089;
+  --light-grey: #cccccc;
+  --grey: #808080;
   /*desktop*/
   --h1-d: 4.6vw;
   --h2-d: 3.981vw;
@@ -56,7 +58,9 @@ a {
 }
 
 button {
-  padding: 0.8rem 2rem;
+  width: 8.2rem;
+  height: 2.8rem;
+  /* padding: 0.8rem 2rem; */
   font-size: var(--button-copy);
   border: none;
   background-color: var(--beige);
