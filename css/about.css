@@ -1,0 +1,93 @@
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#decorative {
+  font-family: "autography";
+  font-size: 7vw;
+}
+
+h2 {
+  font-size: var(--h4-m);
+  color: var(--yellow);
+}
+
+p {
+  font-size: var(--body-copy-m);
+  line-height: 1.6em;
+}
+
+#stepsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oneStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.oneStep:first-child {
+  margin-top: 5vw;
+}
+h4 {
+  font-size: calc(0.8 * var(--h4-m));
+  font-weight: 600;
+  margin-bottom: 3vw;
+}
+
+.oneStep > p {
+  margin-top: -1vw;
+}
+
+@media only screen and (min-width: 530px) {
+  #decorative {
+    font-size: 4vw;
+  }
+  p {
+    font-size: var(--body-copy);
+  }
+  h2 {
+    font-size: var(--h3-d);
+    margin: 0;
+  }
+
+  h4 {
+    font-size: calc(0.8 * var(--h3-d));
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw 0vw;
+  }
+
+  #stepByStep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw 0vw;
+  }
+
+  .oneStep {
+    display: grid;
+    grid-template-areas:
+      "img h"
+      "img p";
+  }
+
+  .oneStep > h4 {
+    grid-area: h;
+    margin: 0;
+  }
+
+  .oneStep > p {
+    grid-area: p;
+  }
+}
