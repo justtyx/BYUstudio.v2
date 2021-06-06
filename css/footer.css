@@ -89,6 +89,6 @@ a {
   li,
   a {
     font-size: var(--body-copy-m);
-    line-height: 2rem;
+    line-height: var(--line-height);
   }
 }

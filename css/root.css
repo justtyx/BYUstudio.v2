@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Autography";
-  src: url("assets/Autography.otf") format("otf");
+  src: url("assets/Autography.otf"), format("otf");
 }
 
 * {
