@@ -278,31 +278,25 @@
               </div>
             </template>
           </div>
-          <p>lots of info goes here</p>
-          <p>more info</p>
           <section class="sec-paymentsummary">
-            <div class="line"></div>
-            <div class="infosummaryflex space">
-              <p>Subtotal</p>
-              <p>DKK 900.00</p>
-            </div>
-            <div class="infosummaryflex space">
-              <p>Shipping</p>
-              <p>DKK 35.00</p>
-            </div>
-            <div class="infosummaryflex space">
-              <p>Total</p>
-              <p>DKK 935.00</p>
-            </div>
-          </section>
-          <section class="sec-infosummary">
-            <div class="line"></div>
-            <div class="infosummaryflex space">
-              <p>Order Number</p>
-              <p>X1X2X3X4</p>
+            <div>
+              <div class="divider"></div>
+              <div class="subtotal priceflex">
+                <p>Subtotal:</p>
+                <p class="calcsubtotal">DKK <span>123.00</span></p>
+              </div>
+              <div class="shippingprice priceflex">
+                <p>Shipping:</p>
+                <p class="calcshippingprice">DKK <span>123.00</span></p>
+              </div>
+              <div class="totalprice pay priceflex">
+                <p>Total:</p>
+                <p class="calctotalprice">DKK <span>123.00</span></p>
+              </div>
+              <div class="divider"></div>
             </div>
             <div>
-              <div class="infosummaryflex smallinfo">
+              <div class="contactpad infosummaryflex smallinfo">
                 <p>Contact</p>
               </div>
               <p class="sum-email">example@gmail.com</p>
@@ -321,6 +315,9 @@
             </div>
             <div class="line"></div>
           </section>
+          <p class="centertext">
+            A copy of your reciept has been sent to your email
+          </p>
         </div>
       </section>
       <section class="sec-thankyou">
@@ -342,19 +339,19 @@
           <a href="https://www.instagram.com/" target="_blank"
             ><img
               class="somelogo"
-              src="assets/ig_logo.svg"
+              src="assets/ig-logo-beige.svg"
               alt="Instagram logo"
           /></a>
           <a href="https://www.facebook.com/" target="_blank"
             ><img
               class="somelogo"
-              src="assets/facebook_logo.svg"
+              src="assets/facebook-logo-beige.svg"
               alt="Facebook logo"
           /></a>
           <a href="https://www.pinterest.com/" target="_blank"
             ><img
               class="somelogo"
-              src="assets/pinterest_logo.svg"
+              src="assets/pinterest-logo-beige.svg"
               alt="Pinterest logo"
           /></a>
         </div>
@@ -365,7 +362,7 @@
           ethical production process.
         </p>
         <p class="signature">x Bea Solveig</p>
-        <button class="button-reciept">Return to front page</button>
+        <button class="button-reciept buttonflex">Return to front page</button>
       </section>
     </main>
     <footer class="small-footer-wrap">
