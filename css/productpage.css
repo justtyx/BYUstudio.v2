@@ -20,6 +20,47 @@
     text-align: center;
 }
 
+#wax, #gemstones {
+    padding: 0.8rem 0.3rem;
+    font-size: var(--button-copy);
+    border: none;
+    background-color: white;
+    color: var(--beige);
+    font-weight: 400;
+    border-radius: 7px;
+    border: 2px solid var(--beige);
+    cursor: pointer;
+}
+
+#wax:focus, #gemstones:focus, #wax:hover, #gemstones:hover, #wax:active, #gemstones:active {
+    transition: 350ms;
+    outline: none;
+    background: var(--beige);
+    border: 2px solid var(--beige);
+    color: white;
+}
+
+#wax>option, #gemstones>option {
+    background: white;
+    color: var(--beige);
+}
+
+.selection-flex {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -1.6rem;
+    display: flex;
+    align-items:baseline;
+
+    width: 1.2rem;
+    height: auto;
+}
+
 .selection-flex>p {
     color: var(--grey);
     font-size: 0.8rem;

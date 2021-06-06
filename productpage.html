@@ -221,21 +221,26 @@
     <p>Item 1, item 2, item 3</p>
     <h2>Extras</h2>
     <div class="flex-container">
-      <div class="selection-flex"><label for="add-wax">
-          <input type="checkbox" id="add-wax" name="add-wax" value="Extra wax">
-          Extra wax</label>
+      <div class="selection-flex">
+        <select name="wax" id="wax">
+          <option value="no-wax">No extra wax</option>
+          <option value="red-wax">Red wax</option>
+          <option value="blue-wax">Blue wax</option>
+          <option value="pink-wax">Pink wax</option>
+          <option value="pink-wax">Mix of wax</option>
+        </select>
         <p>35 DKK</p>
       </div>
       <div class="selection-flex">
         <!-- <label for="gemstones">Extra gemstone</label> -->
-
         <select name="gemstones" id="gemstones">
-          <option value="">Extra gemstone</option>
-          <option value="red-stone">Red</option>
-          <option value="red-stone">Blue</option>
-          <option value="red-stone">Pink</option>
+          <option value="no-stone">No extra gemstones</option>
+          <option value="red-stone">Red gemstone</option>
+          <option value="red-stone">Blue gemstone</option>
+          <option value="red-stone">Pink gemstone</option>
+          <option value="red-stone">Random gemstone</option>
         </select>
-        <p>See prices on dropdown</p>
+        <p>50 DKK</p>
       </div>
     </div>
     <form>
