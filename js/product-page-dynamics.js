@@ -1,7 +1,11 @@
-const fetchUrl = 'https://kea21-7e1e.restdb.io/rest/byu-products?q={"name": "Standard kit"}';
+/*const urlParams = new URLSearchParams(window.location.search);
+const title = urlParams.get('q');*/
+
+//For particular product ↓
+const fetchProduct = 'https://kea21-7e1e.restdb.io/rest/byu-products?q={"name": "Standard kit"}';
 //const mediaurl = 'https://kea2021-8b3d.restdb.io/media/'
 
-fetch(fetchUrl, {
+fetch(fetchProduct, {
     "method": "GET",
     "headers": {
       "x-apikey": "602f9e445ad3610fb5bb63d5"
@@ -18,10 +22,11 @@ fetch(fetchUrl, {
 function showProduct(product) {
 console.log(product);
 // document.querySelector('.product-image').src = product[0].picture;
-document.querySelector('.category-breadcrumb').textContent = product[0].category;
-document.querySelector('.product-breadcrumb').textContent = product[0].name;
+document.querySelector('img.product-image').src = product[0].picture[1];
 document.querySelector('.top-details>h1').textContent = product[0].name;
 document.querySelector('.top-details>h2>span').textContent = product[0].price;
+document.querySelector('.category-breadcrumb').textContent = product[0].category;
+document.querySelector('.product-breadcrumb').textContent = product[0].name;
 document.querySelector('.kit-content').textContent = product[0].content;
 document.querySelector('.kit-description').innerHTML = product[0].description;
 }
