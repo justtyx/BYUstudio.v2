@@ -20,7 +20,7 @@
 
 h2 {
   font-size: var(--h4-m);
-  color: var(--yellow);
+  color: var(--grey);
 }
 
 p {
@@ -66,7 +66,7 @@ h4 {
     font-size: 4vw;
   }
   .oneStep > img {
-    width: 5vw;
+    width: 7vw;
   }
   p {
     font-size: var(--body-copy);
@@ -103,15 +103,19 @@ h4 {
 
   .oneStep > h4 {
     grid-area: h;
-    margin-top: 0vw;
+    margin-top: -2vw;
     text-align: left;
     margin-left: 4vw;
   }
 
   .oneStep > p {
     grid-area: p;
-    margin-top: -2vw;
+    margin-top: -3.4vw;
     text-align: left;
     margin-left: 4vw;
+  }
+
+  #title {
+    margin-top: 9vw;
   }
 }
