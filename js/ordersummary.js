@@ -34,7 +34,7 @@ contentstring.forEach((element) => {
   // change the content
   cloneD.querySelector(".cartproductname").textContent = element.name;
   cloneD.querySelector(".cartproductprice").textContent = `${element.price}`;
-  cloneD.querySelector(".cartproductimage").src = `"${element.picture}"`;
+  cloneD.querySelector(".cartproductimage").src = element.picture[0];
   // grab the parent
   const parentD = document.querySelector(".templateparent-desktop");
   // apend
@@ -50,7 +50,7 @@ contentstring.forEach((element) => {
   clone.querySelector(".cartproductname").textContent = element.name;
   // const imagelink = JSON.parse(element.picture[1]);
   // console.log(element.picture);
-  clone.querySelector(".cartproductimage").src = `"${element.picture}"`;
+  // clone.querySelector(".cartproductimage").src = element.picture;
   clone.querySelector(".cartproductprice").textContent = `${element.price}`;
   // grab the parent
   const parentM = document.querySelector(".templateparent-mobile");

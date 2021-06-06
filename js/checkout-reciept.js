@@ -75,6 +75,7 @@ contentstring.forEach((element) => {
   cloneD.querySelector(
     ".cartproductprice"
   ).textContent = `${element.price} DKK`;
+  cloneD.querySelector(".cartproductimage").src = element.picture[0];
   // cloneD.querySelector(".cartproductdescription").textContent =
   //   element.description;
   // grab the parent
