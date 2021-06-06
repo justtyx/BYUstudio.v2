@@ -29,6 +29,12 @@ main {
   margin-bottom: 1rem;
 }
 
+.filter button {
+  background-color: white;
+  border: 1px solid var(--beige);
+  color: var(--beige);
+}
+
 /* .filter ul {
   display: flex;
   list-style: none;
