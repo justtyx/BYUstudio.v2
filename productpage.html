@@ -219,29 +219,25 @@
     </div>
     <h2>What is in the kit</h2>
     <p class="kit-content">Item 1, item 2, item 3</p>
-    <h2>Extras <span>?</span></h2>
-    <div class="flex-container">
-      <div class="selection-flex">
-        <select name="wax" id="wax">
-          <option value="no-wax">No extra wax</option>
-          <option value="red-wax">Red wax</option>
-          <option value="blue-wax">Blue wax</option>
-          <option value="pink-wax">Pink wax</option>
-          <option value="pink-wax">Mix of wax</option>
-        </select>
-        <p>35 DKK</p>
-      </div>
-      <div class="selection-flex">
-        <select name="gemstones" id="gemstones">
-          <option value="no-stone">No extra gemstones</option>
-          <option value="red-stone">Red gemstone</option>
-          <option value="red-stone">Blue gemstone</option>
-          <option value="red-stone">Pink gemstone</option>
-          <option value="red-stone">Random gemstone</option>
-        </select>
-        <p>50 DKK</p>
-      </div>
-    </div>
+    <h2>Extra wax <span>?</span></h2>
+    <!-- extras section -->
+    <label for="blue-wax">
+      <input type="checkbox" id="blue-wax" name="blue-wax" value="Blue wax">
+      Hard blue wax, 10g<span class="checkmark"></span><span>?</span>
+      <p>DKK <span>515</span></p>
+    </label><br>
+
+    <label for="red-wax">
+      <input type="checkbox" id="red-wax" name="red-wax" value="Red wax">
+      Soft red wax, 10g<span class="checkmark"></span><span>?</span>
+      <p>DKK <span>515</span></p>
+    </label><br>
+
+    <label for="pink-wax"><input type="checkbox" id="pink-wax" name="pink-wax" value="Pink wax">Very soft pink wax,
+      10g<span class="checkmark"></span><span>?</span>
+      <p>DKK <span>515</span></p>
+    </label><br>
+    <!-- prepay selection -->
     <form class="prepay-selection">
       <h2>Prepay for casting</h2>
       <input type="radio" id="silver" name="casting" value="silver">
@@ -262,21 +258,23 @@
       <div class="align-button">
         <button class="add-to-cart">Add to cart</button></div>
     </div>
-    <h3>Description</h3>
-    <p class="kit-description"></p>
-    <h3>Step-by-step</h3>
-    <p></p>
-    <h3>Frequently asked questions</h3>
-    <p></p>
-    <h3>Our customers made</h3>
-    <p></p>
+    <div class="additional-info">
+      <h3>Description</h3>
+      <p class="kit-description"></p>
+      <h3>Step-by-step</h3>
+      <p></p>
+      <h3>Frequently asked questions</h3>
+      <p></p>
+      <h3>Our customers made</h3>
+      <p></p>
+    </div>
   </main>
   <footer>
 
   </footer>
-  <!-- Gemstone template ↓ -->
-  <template class="gem-template">
-    <option value="red-stone">Volvo</option>
+  <!-- Wax template ↓ -->
+  <template class="wax-template">
+    <option value="no-wax">No extra wax</option>
   </template>
   <!-- cart template ↓ -->
   <template class="cart-card-template">
