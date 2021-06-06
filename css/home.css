@@ -357,6 +357,11 @@ a {
   }
 
   /* Kits */
+  #kits {
+    overflow-x: hidden;
+    margin-right: var(--theNumber);
+  }
+
   #ksmallerImg {
     display: none;
   }
@@ -467,13 +472,5 @@ a {
     font-size: var(--button-copy-m);
     padding: 2.5vw 5vw;
     border-radius: 5px;
-  }
-
-  #kbiggerImage {
-    display: none;
-  }
-
-  #background {
-    display: none;
   }
 }
