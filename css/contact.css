@@ -6,7 +6,7 @@
   z-index: -1;
   background-image: url(https://raw.githubusercontent.com/Ivanlsko/BYUstudio/8305ddb8940b606e5baa37d4e0d78ec4abbd188a/css/thick-lines-bg.svg);
   width: 100vw;
-  height: 28vw;
+  height: 50vw;
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@
 
 #decorative {
   font-family: "autography";
-  font-size: 7vw;
+  font-size: 10vw;
 }
 
 main {
@@ -101,6 +101,10 @@ input {
 
   #title {
     margin-top: 9vw;
+  }
+
+  #thickLines {
+    height: 20vw;
   }
 
   p {
