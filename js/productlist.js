@@ -16,40 +16,40 @@ if (kits) {
   document.querySelector("#castinglist").remove();
   document.querySelector("#kits-button").style.backgroundColor = "var(--beige)";
   document.querySelector("#kits-button").style.color = "white";
-}
-fetch(urlKits, {
-  method: "GET",
-  headers: {
-    "x-apikey": "602f9e445ad3610fb5bb63d5",
-  },
-})
-  .then((res) => res.json())
-  .then((response) => {
-    showKits(response);
+  fetch(urlKits, {
+    method: "GET",
+    headers: {
+      "x-apikey": "602f9e445ad3610fb5bb63d5",
+    },
   })
-  .catch((err) => {
-    console.error(err);
-  });
+    .then((res) => res.json())
+    .then((response) => {
+      showKits(response);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 
-function showKits(products) {
-  console.log(products);
-  //grab template
-  const template = document.querySelector(".productTemplate").content;
-  //clone
-  products.forEach((product) => {
-    console.log(product);
-    const copy = template.cloneNode(true);
-    //adjust stuff
-    copy.querySelector(
-      ".product a"
-    ).href = `productpage.html?q=${product.name}`;
-    copy.querySelector(".img01").src = product.picture[0];
-    copy.querySelector(".product-title").textContent = product.name;
-    copy.querySelector(".price span").textContent = product.price;
+  function showKits(products) {
+    console.log(products);
+    //grab template
+    const template = document.querySelector(".productTemplate").content;
+    //clone
+    products.forEach((product) => {
+      console.log(product);
+      const copy = template.cloneNode(true);
+      //adjust stuff
+      copy.querySelector(
+        ".product a"
+      ).href = `productpage.html?id=${product._id}`;
+      copy.querySelector(".img01").src = product.picture[0];
+      copy.querySelector(".product-title").textContent = product.name;
+      copy.querySelector(".price span").textContent = product.price;
 
-    //append
-    document.querySelector("#productlist").appendChild(copy);
-  });
+      //append
+      document.querySelector("#productlist").appendChild(copy);
+    });
+  }
 }
 
 if (refill) {
