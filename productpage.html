@@ -243,7 +243,14 @@
           <h2>Prepay for casting</h2>
           <p class="explanation-box">&nbsp;?&nbsp;</p>
         </div>
-        <section class="casting-container-to-append"></section>
+        <section class="casting-container-to-append">
+          <div class="label-group">
+            <label for="no-casting" class="wax-selection casting-selection">
+              No, I will order casting later<span class="checkmark radio-btn"></span></label>
+            <input type="radio" id="no-casting" name="no-casting" value="no casting" class="casting-input">
+            <p class="explanation-box">&nbsp;?&nbsp;</p>
+          </div>
+        </section>
         <!-- static version would go here -->
 
         <div class="total-add-container">
@@ -319,10 +326,10 @@
   <!-- Wax template ↓ -->
   <template id="wax-template">
     <div class="label-group">
-      <label class="wax-selection waxxx">
-        <input type="checkbox" id="" name="" value="" class="wax-input">
-        <span class="checkmark">
-      </label></span>
+      <label class="wax-selection waxxx"></label>
+      <input type="checkbox" id="" name="" value="" class="wax-input">
+      <span class="checkmark">
+      </span>
       <p class="explanation-box">&nbsp;?&nbsp;</p>
       <p>DKK <span class="wax-price">515</span></p>
     </div>
@@ -331,8 +338,8 @@
   <template id="casting-template">
     <div class="label-group">
       <label for="silver" class="wax-selection casting-selection">
-        <input type="radio" id="silver" name="casting" value="silver" class="casting-input">
         Yes, cast my piece in SILVER<span class="checkmark radio-btn"></span></label>
+      <input type="radio" id="silver" name="casting" value="silver" class="casting-input">
       <p class="explanation-box">&nbsp;?&nbsp;</p>
       <p>DKK <span class="casting-price">515</span></p>
     </div>
