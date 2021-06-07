@@ -34,13 +34,11 @@ contentstring.forEach((element) => {
   // change the content
   cloneD.querySelector(".cartproductname").textContent = element.name;
   cloneD.querySelector(".cartproductprice").textContent = `${element.price}`;
-  cloneD.querySelector(".cartproductimage").src = `"${element.picture}"`;
+  cloneD.querySelector(".cartproductimage").src = element.picture[0];
   // grab the parent
   const parentD = document.querySelector(".templateparent-desktop");
   // apend
   parentD.appendChild(cloneD);
-  // document.querySelector(".ordersummarydesktop .calctotalprice").textContent =
-  //   "";
 
   //MOBILE
   const template = document.querySelector(".template-mobile").content;
@@ -48,17 +46,12 @@ contentstring.forEach((element) => {
   const clone = template.cloneNode(true);
   // change the content
   clone.querySelector(".cartproductname").textContent = element.name;
-  // const imagelink = JSON.parse(element.picture[1]);
-  // console.log(element.picture);
-  clone.querySelector(".cartproductimage").src = `"${element.picture}"`;
+  clone.querySelector(".cartproductimage").src = element.picture;
   clone.querySelector(".cartproductprice").textContent = `${element.price}`;
   // grab the parent
   const parentM = document.querySelector(".templateparent-mobile");
   // apend
   parentM.appendChild(clone);
-
-  // document.querySelector(".mobilesummarycontent .calctotalprice").textContent =
-  //   "";
 });
 
 // this is just hardcoding the amount of strings

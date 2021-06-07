@@ -1,12 +1,22 @@
 @media (max-width: 700px) {
     /*Adding a photo under the nav bar*/
-    nav {
+    .nav-box {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: var(--margin);
     }
     }
 
+* {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+/* flex styling*/
 .flex-container {
     display: flex;
     align-items: center;
@@ -20,9 +30,8 @@
     text-align: center;
 }
 
-.selection-flex>p {
-    color: var(--grey);
-    font-size: 0.8rem;
+.selection-flex {
+    position: relative;
 }
 
 .breadcrumbs.flex-container {
@@ -32,6 +41,82 @@
 .product-image {
     margin-top: 1.5rem;
     border-radius: 7px;
+}
+
+.explanation-box {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--beige);
+}
+
+/*form code*/
+
+.title-form {
+    display: flex;
+    align-items: center;
+}
+
+ /* source https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+ .wax-selection {
+    display: block;
+    position: relative;
+    padding-left: 1.3rem;
+    cursor: pointer;
+    font-size: 14px;
+    width: 70%;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .wax-selection input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--beige);
+  }
+
+  .radio-btn {
+      border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .wax-selection:hover input ~ .checkmark {
+    transition: 150ms;
+    border: 2.5px solid var(--beige);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .wax-selection input:checked ~ .checkmark {
+    transition: 50ms;
+    border: 5px solid var(--beige);
+  }
+
+  .label-group {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+.selection-flex>p {
+    color: var(--grey);
+    font-size: 0.8rem;
 }
 
 .total-add-container {
@@ -47,3 +132,72 @@
 .add-to-cart {
     background-color: var(--yellow);
 }
+
+.additional-info {
+    grid-column: 1/2;
+    justify-self: start;
+    margin: 2rem 0;
+}
+
+
+/*desktop adjustments ↓*/
+@media (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .product-image {
+        grid-column: 1/2;
+        margin: 0;
+    }
+
+    .col-2 {
+        grid-column: 2/3;
+    }
+
+    main h1 {
+        margin: 0.2rem 0 1rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .breadcrumbs>p, .breadcrumbs>a>p {
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+
+    .top-details>h2, .total-container>p {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .kit-content {
+        line-height: normal;
+        margin: 0.2rem 0 1rem;
+    }
+
+    .wax-container-to-append, .casting-container-to-append {
+        margin-bottom: 1rem;
+    }
+
+    .total-add-container {
+        background-color: white;
+        padding: 1rem 0;
+    }
+
+    .total-container>h2 {
+        font-weight: 500;
+    }
+
+    .add-to-cart {
+        margin: 2rem 0;
+    }
+
+    }

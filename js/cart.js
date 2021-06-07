@@ -2,6 +2,8 @@
 
 const cartBtn = document.querySelector('.toggle-btn');
 const closeCartBtn = document.querySelector('.close-cart');
+const addToCart = document.querySelector('.add-to-cart');
+const cart = document.querySelector('.cart-outer-box');
 
 cartBtn.addEventListener('click', () => {
     document.querySelector('.cart-outer-box').classList.add('cart-is-open');
@@ -9,7 +11,11 @@ cartBtn.addEventListener('click', () => {
 
 closeCartBtn.addEventListener('click', () => {
     document.querySelector('.cart-outer-box').classList.remove('cart-is-open');
-})
+});
+
+addToCart.addEventListener('click', () => {
+  document.querySelector('.cart-outer-box').classList.add('cart-is-open');
+});
 
 //cart dynamics code
 /*const cart = {
