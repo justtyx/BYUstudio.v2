@@ -56,9 +56,11 @@ h1 {
   right: 0;
   z-index: -3;
   margin-right: var(--theNumber);
-  transform: scale(1.6);
-  top: 9vw;
   width: 55%;
+  top: -5vw;
+  background-image: url(/assets/yellow-3-lines.svg);
+  height: 67vw;
+  width: 60vw;
 }
 /*Video*/
 
@@ -87,8 +89,9 @@ article > p {
   line-height: 1.8em;
 }
 
-video {
+iframe {
   width: 56.528vw;
+  height: 31.797vw;
 }
 
 /* Steps */
