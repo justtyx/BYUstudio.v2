@@ -220,7 +220,7 @@ h4 {
 #pinterest {
   background-color: #ffdcd0;
   width: 100vw;
-  height: 100vh;
+  height: 51vw;
   margin: 44vw var(--theNumber) 0vw;
   display: flex;
   position: relative;
@@ -399,6 +399,7 @@ h4 {
   /*pinterest*/
   #pinterest {
     margin-top: 130vw;
+    height: 180vw;
     flex-direction: column;
   }
   #pinterest > img {
