@@ -4,6 +4,10 @@
   margin-left: var(--theNumber);
   margin-right: var(--theNumber);
   z-index: -1;
+  background-image: url(thick-lines-bg.svg);
+  width: 100vw;
+  height: 50vw;
+  background-size: cover;
 }
 
 #title {
@@ -11,6 +15,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#title > img {
+  border-radius: 0.4vw;
 }
 
 #decorative {
@@ -113,5 +120,9 @@ h4 {
     margin-top: -2vw;
     text-align: left;
     margin-left: 4vw;
+  }
+
+  #thickLines {
+    height: 20vw;
   }
 }
