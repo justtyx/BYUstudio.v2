@@ -9,11 +9,10 @@
   background-color: #e1a089;
   position: absolute;
   top: 0;
-  left: max(-100vw, -350px);
+  left: max(calc(-100vw - 2rem), calc(-350px - 2rem));
   box-shadow: 4px 0px 20px -1px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
 }
-
 .hidden {
   display: none;
 }
@@ -93,12 +92,12 @@
 
 /*---------------MOVEMENT-----------------*/
 .close {
-  transform: translateX(min(-100vw, -350px));
+  transform: translateX(min(calc(-100vw - 2rem), calc(-350px - 2rem)));
   transition: 0.5s;
 }
 
 .open {
-  transform: translateX(min(100vw, 350px));
+  transform: translateX(min(calc(100vw + 2rem), calc(350px + 2rem)));
 }
 
 /*---------------desktop pages-----------------*/
