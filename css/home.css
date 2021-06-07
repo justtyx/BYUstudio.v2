@@ -58,7 +58,7 @@ h1 {
   margin-right: var(--theNumber);
   width: 55%;
   top: -5vw;
-  background-image: url(/assets/yellow-3-lines.svg);
+  background-image: url(https://raw.githubusercontent.com/Ivanlsko/BYUstudio/8305ddb8940b606e5baa37d4e0d78ec4abbd188a/assets/small-waves-yellow-thicker.svg);
   height: 67vw;
   width: 60vw;
 }
@@ -98,7 +98,7 @@ iframe {
 
 #steps {
   height: 40.694vw;
-  background-image: url("thick-lines-bg.svg");
+  background-image: url(https://raw.githubusercontent.com/Ivanlsko/BYUstudio/8305ddb8940b606e5baa37d4e0d78ec4abbd188a/css/thick-lines-bg.svg);
   background-size: cover;
   width: 100vw;
   margin: 10vw -6.944vw 0vw -6.944vw;
