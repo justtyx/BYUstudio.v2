@@ -60,9 +60,13 @@
   font-size: 1.3rem;
 }
 
-.body-hamburger-text {
+.body-hamburger-text{
   display: block;
   /* width: max(100vw - 6rem, 16ch); */
+}
+
+.body-hamburger-text>h1, .body-hamburger-text>a>h1 {
+  position: relative;
 }
 
 .pages {
