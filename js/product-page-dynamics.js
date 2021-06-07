@@ -84,7 +84,7 @@ options.forEach(option => {
 });
 
 }
-/*
+
 //using a cart
 const form = document.querySelector('form');
 form.addEventListener('submit', userSubmitted);
@@ -92,7 +92,7 @@ form.addEventListener('submit', userSubmitted);
 function userSubmitted(e) {
   e.preventDefault();
 };
-
+/*
 const cart = {
   KEY: 'basket',
   contents: [],
