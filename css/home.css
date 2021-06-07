@@ -148,10 +148,20 @@ h4 {
   margin-top: 10vw;
 }
 
+.textBg {
+  background-color: thistle;
+  padding: 5vw;
+}
+
 #kitsText {
   position: absolute;
   left: 0;
-  width: 25vw;
+  width: 34vw;
+  background-color: #f0f0f0;
+  padding: 0vw 5vw 3vw;
+  top: 3vw;
+  color: black;
+  border-radius: 0.5vw;
 }
 
 #kbiggerImg {
@@ -182,8 +192,12 @@ h4 {
 #sustainText {
   position: absolute;
   right: 0;
-  width: 28vw;
-  text-align: right;
+  width: 38vw;
+  background-color: #f0f0f0;
+  padding: 0vw 5vw 3vw;
+  top: 3vw;
+  color: black;
+  border-radius: 0.5vw;
 }
 
 #sbiggerImg {
