@@ -26,6 +26,9 @@ options.forEach(option => {
         labelWax.textContent = option.name;
         labelWax.setAttribute("for", `${option.labels}`);        
         cloneWax.querySelector('.wax-price').textContent = option.price;
+        cloneWax.querySelector('.wax-input').setAttribute("id", `${option.labels}`);
+        cloneWax.querySelector('.wax-input').setAttribute("name", `${option.labels}`);
+        cloneWax.querySelector('.wax-input').setAttribute("value", `${option.labels}`);
 
         //append
         document.querySelector('.wax-container-to-append').appendChild(cloneWax);
@@ -37,6 +40,9 @@ options.forEach(option => {
         labelCasting.textContent = option.name;
         labelCasting.setAttribute("for", `${option.labels}`);        
         cloneCasting.querySelector('.casting-price').textContent = option.price;
+        cloneCasting.querySelector('.casting-input').setAttribute("id", `${option.labels}`);
+        cloneCasting.querySelector('.casting-input').setAttribute("name", `${option.labels}`);
+        cloneCasting.querySelector('.casting-input').setAttribute("value", `${option.labels}`);
 
         //append
         document.querySelector('.casting-container-to-append').appendChild(cloneCasting);
