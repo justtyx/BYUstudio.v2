@@ -280,10 +280,14 @@ h4 {
   #bgMob {
     display: unset;
     position: absolute;
+    background-image: url(/assets/yellow-3-lines.svg);
+    width: 70vw;
+    height: 140vw;
     top: 0;
-    width: 75%;
     right: 0vw;
     z-index: -3;
+    background-size: contain;
+    transform: ;
   }
 
   #heroDesk {
@@ -322,10 +326,10 @@ h4 {
   #videoPar {
     width: 86vw !important;
   }
-  video {
+  iframe {
     width: 86vw;
+    height: 48.375vw;
   }
-
   /* steps */
   #steps {
     height: auto;
@@ -356,6 +360,8 @@ h4 {
   #kitsText {
     position: relative;
     width: 60vw;
+    padding: 0vw 5vw 5vw;
+    margin-top: 2vw;
   }
 
   #kbiggerImg {
@@ -376,6 +382,7 @@ h4 {
     position: absolute;
     right: 7vw;
     width: 61vw;
+    top: unset;
   }
 
   #sbiggerImg {
@@ -392,7 +399,7 @@ h4 {
 
   /*pinterest*/
   #pinterest {
-    margin-top: 120vw;
+    margin-top: 130vw;
     flex-direction: column;
   }
   #pinterest > img {
