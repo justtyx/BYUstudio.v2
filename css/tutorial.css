@@ -4,6 +4,9 @@
   margin-left: var(--theNumber);
   margin-right: var(--theNumber);
   z-index: -1;
+  background-image: url(thick-lines-bg.svg);
+  width: 100vw;
+  height: 20vw;
 }
 
 #title {
@@ -135,5 +138,9 @@ article {
 
   article {
     padding: 5vw 0vw;
+  }
+
+  #thickLines {
+    height: 50vw;
   }
 }
