@@ -7,6 +7,10 @@
   border-bottom: 2rem;
 } */
 
+.currenttabcheckout {
+  opacity: 50%;
+}
+
 .contactpad {
   padding-top: 0.5rem;
 }
