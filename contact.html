@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <title>Contact us</title>
   </head>
@@ -20,8 +21,53 @@
         <a href="index.html"
           ><img src="assets/Black_logo 1.svg" alt="logo-icon"
         /></a>
-        <img src="assets/cart.svg" alt="cart-icon" />
+        <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
       </nav>
+      <div class="cart-outer-box">
+        <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+        <h1 class="page-title">Cart</h1>
+        <!-- A place to append cart content ↓ -->
+        <section class="cart-outer-card">
+          <section class="cart-card">
+            <div class="cart-img-item-container">
+              <img src="assets/kit-for-two-box.webp" alt="" />
+            </div>
+            <h3 class="cart-item-name">Kit for two</h3>
+            <p class="cart-item-description">No extras</p>
+            <p class="cart-item-price">DKK <span>300.00</span></p>
+            <img
+              src="assets/cross-thin.svg"
+              alt="Remove item"
+              class="remove-cart-item"
+            />
+            <div class="quantity-outer-box">
+              <img
+                src="assets/minus.svg"
+                alt="Decrease quantity"
+                class="cart-minus"
+              />
+              <input
+                type="number"
+                min="1"
+                value="1"
+                class="cart-item-quantity"
+              />
+              <img
+                src="assets/plus-rounded-thin.svg"
+                alt="Increase quantity"
+                class="cart-plus"
+              />
+            </div>
+          </section>
+        </section>
+        <div class="subtotal-flex">
+          <h3>Subtotal</h3>
+          <p>DKK <span>300.00</span></p>
+        </div>
+        <a href="checkout-info.html" class="cart-to-checkout"
+          ><button>Proceed to checkout</button></a
+        >
+      </div>
     </header>
     <section class="sec-hamburger">
       <div class="head-hamburger">
@@ -296,77 +342,6 @@
         /></a>
       </div>
     </section>
-
-    <div id="thickLines"><img src="css/thick-lines-bg.svg" alt="" /></div>
-
-    <section id="title">
-      <h1 id="decorative">Get in touch!</h1>
-      <p>
-        I’m always happy to help with any questions or problems you might have
-        regarding BYÚ studio. You can leave me a message here, or reach out to
-        me on Instagram and I’ll get back to you as soon as possible!
-      </p>
-    </section>
-    <main>
-      <section class="contact_info">
-        <h3>Contact information</h3>
-        <p>Email: hello@byu.dk</p>
-        <p>Phone number: +45 12 34 56 78</p>
-        <p>Instagram: @byustudio</p>
-        <p>Facebook: /byu.studio</p>
-        <p>Address: København, Danmark</p>
-      </section>
-
-      <section class="contact_form">
-        <h3>Send a message</h3>
-        <section class="form-input">
-          <div class="two-box-flex">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Name"
-            />
-            <input
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Surname"
-            />
-          </div>
-          <input
-            type="tel"
-            name="phonenumber"
-            id="phonenumber"
-            placeholder="Telephone number"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            />
-
-            <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="Subject"
-            />
-
-            <textarea
-            name="message"
-            required
-            id="message"
-            rows="8"
-            columns="8"
-            ></textarea>
-            
-
-      </section>
-      <button>Send Message</button>
-    </main>
-
     <footer>
       <img src="assets/Black_logo 1.svg" alt="logo-icon" />
       <p id="description">
@@ -416,5 +391,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/cart.js"></script>
   <script src="js/hamburger.js"></script>
 </html>

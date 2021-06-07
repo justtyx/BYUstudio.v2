@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/manifesto.css" />
     <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/manifesto.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <title>Manifesto | BYÙ Studio</title>
   </head>
@@ -20,8 +21,53 @@
         <a href="index.html"
           ><img src="assets/Black_logo 1.svg" alt="logo-icon"
         /></a>
-        <img src="assets/cart.svg" alt="cart-icon" />
+        <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
       </nav>
+      <div class="cart-outer-box">
+        <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+        <h1 class="page-title">Cart</h1>
+        <!-- A place to append cart content ↓ -->
+        <section class="cart-outer-card">
+          <section class="cart-card">
+            <div class="cart-img-item-container">
+              <img src="assets/kit-for-two-box.webp" alt="" />
+            </div>
+            <h3 class="cart-item-name">Kit for two</h3>
+            <p class="cart-item-description">No extras</p>
+            <p class="cart-item-price">DKK <span>300.00</span></p>
+            <img
+              src="assets/cross-thin.svg"
+              alt="Remove item"
+              class="remove-cart-item"
+            />
+            <div class="quantity-outer-box">
+              <img
+                src="assets/minus.svg"
+                alt="Decrease quantity"
+                class="cart-minus"
+              />
+              <input
+                type="number"
+                min="1"
+                value="1"
+                class="cart-item-quantity"
+              />
+              <img
+                src="assets/plus-rounded-thin.svg"
+                alt="Increase quantity"
+                class="cart-plus"
+              />
+            </div>
+          </section>
+        </section>
+        <div class="subtotal-flex">
+          <h3>Subtotal</h3>
+          <p>DKK <span>300.00</span></p>
+        </div>
+        <a href="checkout-info.html" class="cart-to-checkout"
+          ><button>Proceed to checkout</button></a
+        >
+      </div>
     </header>
     <section class="sec-hamburger">
       <div class="head-hamburger">
@@ -296,6 +342,57 @@
         /></a>
       </div>
     </section>
+    <div id="thickLines"></div>
+
+    <section id="title">
+      <h1 id="decorative">Manifesto</h1>
+    </section>
+    <section id="stepByStep">
+      <h2>What does BYU stand for</h2>
+      <div class="stepsWrapper">
+        <div class="oneStep">
+          <img src="assets/step-one.svg" alt="" />
+          <h4>Handmade in Denmark</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-two.svg" alt="" />
+          <h4>Personalised and co-created products</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-three.svg" alt="" />
+          <h4>Unique moments</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-four.svg" alt="" />
+          <h4>One of a kind products</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-five.svg" alt="" />
+          <h4>Responsible production business model</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-six.svg" alt="" />
+          <h4>Social responsible production</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-seven.svg" alt="" />
+          <h4>Good quality, long lasting products</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-eight.svg" alt="" />
+          <h4>Slow fashion approach</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-nine.svg" alt="" />
+          <h4>Information about responsible consumption</h4>
+        </div>
+        <div class="oneStep">
+          <img src="assets/step-ten.svg" alt="" />
+          <h4>Made by you for you</h4>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <img src="assets/Black_logo 1.svg" alt="logo-icon" />
       <p id="description">
@@ -345,5 +442,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/cart.js"></script>
   <script src="js/hamburger.js"></script>
 </html>

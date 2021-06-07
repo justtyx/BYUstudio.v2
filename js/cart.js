@@ -16,9 +16,9 @@ closeCartBtn.addEventListener('click', () => {
 addToCart.addEventListener('click', () => {
   document.querySelector('.cart-outer-box').classList.add('cart-is-open');
 });
-
+/*
 //cart dynamics code
-/*const cart = {
+const cart = {
     KEY: "basket",
   contents : [],
   init(){

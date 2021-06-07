@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/menu.css"/>
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/menu.css" />
   <title>Home | BYÙ Studio</title>
 
 <body>
@@ -20,14 +21,36 @@
       <a href="index.html"><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
       <img src="assets/cart.svg" alt="cart-icon" />
     </nav>
+    <div class=" cart-outer-box">
+      <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+      <h1 class="page-title">Cart</h1>
+      <!-- A place to append cart content ↓ -->
+      <section class="cart-outer-card">
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/kit-for-two-box.webp" alt="" />
+          </div>
+          <h3 class="cart-item-name">Kit for two</h3>
+          <p class="cart-item-description">No extras</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
+        </section>
+      </section>
+      <div class="subtotal-flex">
+        <h3>Subtotal</h3>
+        <p>DKK <span>300.00</span></p>
+      </div>
+      <a href="checkout-info.html" class="cart-to-checkout"><button>Proceed to checkout</button></a>
+    </div>
   </header>
   <section class="sec-hamburger">
     <div class="head-hamburger">
-      <img
-        class="close-icon"
-        src="assets/cross-white.png"
-        alt="X for closing hamburgermenu"
-      />
+      <img class="close-icon" src="assets/cross-white.png" alt="X for closing hamburgermenu" />
     </div>
 
     <div class="body-hamburger">
@@ -50,57 +73,29 @@
         </div>
         <div class="big-pages big-pages-shop hidden">
           <div class="big-pages-header">
-            <img
-              class="big-pages-header-logo"
-              src="assets/Black_logo.png"
-              alt="BYU studio logo"
-            />
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="BYU studio logo" />
           </div>
           <div class="big-pages-body-flex">
             <div class="big-pages-body">
               <a href="productlist.html?kits=true">
-                <img
-                  class="ham-cat-image"
-                  src="assets/shop-blur.png"
-                  alt=""
-                />
+                <img class="ham-cat-image" src="assets/shop-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>KITS</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="productlist.html?refills=true">
-                <img
-                  class="ham-cat-image"
-                  src="assets/refills-blur.png"
-                  alt="ring made from blue wax"
-                />
+                <img class="ham-cat-image" src="assets/refills-blur.png" alt="ring made from blue wax" />
                 <div class="big-link-flex">
                   <h2>REFILLS</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="productlist.html?casting=true">
-                <img
-                  class="ham-cat-image"
-                  src="assets/casting-blur.png"
-                  alt="hands with several unique silver rings"
-                />
+                <img class="ham-cat-image" src="assets/casting-blur.png" alt="hands with several unique silver rings" />
                 <div class="big-link-flex">
                   <h2>CASTING</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
             </div>
@@ -127,72 +122,36 @@
         </div>
         <div class="big-pages big-pages-about hidden">
           <div class="big-pages-header">
-            <img
-              class="big-pages-header-logo"
-              src="assets/Black_logo.png"
-              alt=""
-            />
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
           </div>
           <div class="big-pages-body-flex">
             <div class="big-pages-body">
               <a href="about.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/about-blur.png"
-                  alt=""
-                />
+                <img class="ham-cat-image" src="assets/about-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>ABOUT US</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="manifesto.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/manifesto-blur.png"
-                  alt=""
-                />
+                <img class="ham-cat-image" src="assets/manifesto-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>MANIFESTO</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="sustainanability.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/sustainability-blur.png"
-                  alt=""
-                />
+                <img class="ham-cat-image" src="assets/sustainability-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>SUSTAINABILITY</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="contact.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/contact-blur.png"
-                  alt=""
-                />
+                <img class="ham-cat-image" src="assets/contact-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>CONTACT US</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
             </div>
@@ -216,11 +175,7 @@
         </div>
         <div class="big-pages big-pages-getstarted hidden">
           <div class="big-pages-header">
-            <img
-              class="big-pages-header-logo"
-              src="assets/Black_logo.png"
-              alt=""
-            />
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
           </div>
           <div class="big-pages-body-flex">
             <div class="big-pages-body">
@@ -228,41 +183,22 @@
                 <img class="ham-cat-image" src="assets/faq-blur.png" alt="" />
                 <div class="big-link-flex">
                   <h2>FAQ</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="inspiration.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/inspiration-blur.png"
-                  alt="ring made from blue wax"
-                />
+                <img class="ham-cat-image" src="assets/inspiration-blur.png" alt="ring made from blue wax" />
                 <div class="big-link-flex">
                   <h2>INSPIRATION</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
               <a href="tutorial.html">
-                <img
-                  class="ham-cat-image"
-                  src="assets/tutorials-blur.png"
-                  alt="hands with several unique silver rings"
-                />
+                <img class="ham-cat-image" src="assets/tutorials-blur.png"
+                  alt="hands with several unique silver rings" />
                 <div class="big-link-flex">
                   <h2>Tutorials</h2>
-                  <img
-                    class="ham-cat-arrow"
-                    src="assets/arrow-thin.png"
-                    alt="arrow"
-                  />
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
                 </div>
               </a>
             </div>
@@ -274,24 +210,12 @@
       </div>
     </div>
     <div class="footer-hamburger someiconflex">
-      <a href="https://www.instagram.com/" target="_blank"
-        ><img
-          class="somelogo"
-          src="assets/instagram-white.png"
-          alt="Instagram logo"
-      /></a>
-      <a href="https://www.facebook.com/" target="_blank"
-        ><img
-          class="somelogo"
-          src="assets/facebook-white.png"
-          alt="Facebook logo"
-      /></a>
-      <a href="https://www.pinterest.com/" target="_blank"
-        ><img
-          class="somelogo"
-          src="assets/pinterest-white.png"
-          alt="Pinterest logo"
-      /></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class="somelogo" src="assets/instagram-white.png"
+          alt="Instagram logo" /></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="somelogo" src="assets/facebook-white.png"
+          alt="Facebook logo" /></a>
+      <a href="https://www.pinterest.com/" target="_blank"><img class="somelogo" src="assets/pinterest-white.png"
+          alt="Pinterest logo" /></a>
     </div>
   </section>
   <section id="hero">
@@ -307,9 +231,14 @@
     <div id="bgMob" id="background-mobile" alt=""></div>
   </section>
   <section id="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/BNdCMMZbkdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <article>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BNdCMMZbkdo" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <article>
       <h3>By you, for you</h2>
-        <p id="videoPar">We are selling DIY  kits containing different types of shaping wax, shaping tools, instructions and design ideas, and potentially ethical lab-grown gemstones, with which you can create your own jewelry prototypes. Also, we can cast it for you afterwards.
+        <p id="videoPar">We are selling DIY kits containing different types of shaping wax, shaping tools, instructions
+          and design ideas, and potentially ethical lab-grown gemstones, with which you can create your own jewelry
+          prototypes. Also, we can cast it for you afterwards.
         </p>
     </article>
   </section>
@@ -319,7 +248,8 @@
       <div class="oneStep">
         <img src="assets/step-one.svg" alt="">
         <h4>Choose your kit</h4>
-        <p>Standard kit for one person, Kit for two and Family kit for a group of people. Choose the one that fits you the best. </p>
+        <p>Standard kit for one person, Kit for two and Family kit for a group of people. Choose the one that fits you
+          the best. </p>
       </div>
       <div class="oneStep">
         <img src="assets/step-two.svg" alt="">
@@ -336,7 +266,8 @@
   <section id="kits">
     <div id="kitsText">
       <h2>Go explore our kits</h2>
-      <p>In our kit selection, you can choose the type that fits you the best. Whether you want to try it on your own, with your friend or even with your whole family. We have got you covered.</p>
+      <p>In our kit selection, you can choose the type that fits you the best. Whether you want to try it on your own,
+        with your friend or even with your whole family. We have got you covered.</p>
       <button>Tell me more</button>
     </div>
     <img id="kbiggerImg" src="assets/kits-lp-big.jpg" alt="">
@@ -348,7 +279,8 @@
     <img id="sbiggerImg" src="assets/sus-lp-big.jpg" alt="">
     <div id="sustainText">
       <h2>We care about nature</h2>
-      <p>It is important for us to make sustainable choices, and our product isn't different from that. Material, production, shipping, all of that with the right values in our mind.</p>
+      <p>It is important for us to make sustainable choices, and our product isn't different from that. Material,
+        production, shipping, all of that with the right values in our mind.</p>
       <button>Tell me more</button>
     </div>
   </section>
@@ -356,7 +288,8 @@
     <div>
       <h2>Get inspired by others</h2>
 
-      <p>Do you wonder what the final product can look like? Wonder no more. Here you can see some of the creations made from BYU kits. Jump to our inspiration page for even more ideas,</p><button>Show me more</button>
+      <p>Do you wonder what the final product can look like? Wonder no more. Here you can see some of the creations made
+        from BYU kits. Jump to our inspiration page for even more ideas,</p><button>Show me more</button>
     </div>
     <img src="assets/pinterest.png" alt="">
 
@@ -371,13 +304,12 @@
   <footer>
 
     <img src="assets/Black_logo 1.svg" alt="logo-icon">
-    <p id="description">DIY jewelry kits for a personalized experience. Put your creativity to work, craft a lovely piece of jewelry, and shine.</p>
+    <p id="description">DIY jewelry kits for a personalized experience. Put your creativity to work, craft a lovely
+      piece of jewelry, and shine.</p>
     <p id="contact">+45 12 34 56 78 | hello@byustudio.dk</p>
     <div id="some">
-      <img src="assets/ig_logo.svg" alt="" /><img
-        src="assets/facebook_logo.svg"
-        alt=""
-      /><img src="assets/Vector.svg" alt="" />
+      <img src="assets/ig_logo.svg" alt="" /><img src="assets/facebook_logo.svg" alt="" /><img src="assets/Vector.svg"
+        alt="" />
     </div>
     <div id="footerNav">
       <ul>
@@ -417,5 +349,7 @@
 </body>
 </head>
 
+<script src="js/cart.js"></script>
 <script src="js/hamburger.js"></script>
+
 </html>

@@ -92,9 +92,34 @@ form.addEventListener('submit', userSubmitted);
 function userSubmitted(e) {
   e.preventDefault();
 };
+/*
+const cart = {
+  KEY: 'basket',
+  contents: [],
+  init() {
+    //_contents is a temporary string
+    let _contents = localStorage.getItem(cart.KEY);
+    if(_contents) {
+    //if there is anything turn it into JS objects that we can access with the dot . notation
+    cart.contents = JSON.parse(_contents);
+  }
+
+  this.updateDom();
+
+
+  },
+
+  updateDom() {
+  
+    const cartContent = document.querySelector('.cart-items-place');
+    cartContent.innerHTML = "";
+  
+    if(cart.contents === 0) {
+      cartContent.innerHTML = "<h2>The cart is empty</h2>";
+    } else {
 
 // cloning items in the cart
-/*cart.contents.forEach((item) => {
+cart.contents.forEach((item) => {
   console.log(item);
   const cartTemplate = document.querySelector('.cart-card-template').content;
   const itemclone = cartTemplate.cloneNode(true);
@@ -137,4 +162,43 @@ function userSubmitted(e) {
 
   
   cartContent.appendChild(itemclone);
-});*/
+});
+}
+}, 
+add(obj) {
+  const index = cart.contents.findIndex((item) => item._id == obj._id);
+
+  if (index == -1) {
+    obj.qty = 1;
+    cart.contents.push(obj);
+  } else {
+    cart.contents[index].qty += 1;
+  }
+  this.sync();
+},
+update(obj) {
+  const index = cart.contents.findIndex((item) => item._id == obj._id);
+  const inputEl = document.querySelector('.fid-' + obj._id);
+    cart.contents[index].qty = inputEl.valueAsNumber;
+  if (obj.qty === 0) {
+    cart.contents.splice(index, 1);
+  } else {
+    cart.contents[index].qty = obj.qty;
+  
+  }
+    cart.sync();
+  },
+  
+  minusOne(id) {
+    const indexObj = cart.contents.find((item)=> item._id == id);
+    indexObj.qty--;
+    cart.update(indexObj);
+  },
+  plusOne(id) {
+    const indexObj = cart.contents.find((item)=> item._id == id);
+    indexObj.qty++;
+    cart.update(indexObj);
+  },
+  };
+  
+  cart.init();*/
