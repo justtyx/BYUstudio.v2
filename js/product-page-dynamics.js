@@ -1,8 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
-const title = urlParams.get('q');
+const title = urlParams.get('id');
 
 //For particular product ↓
-const fetchProduct = `https://kea21-7e1e.restdb.io/rest/byu-products?q={"name": "${title}"}`;
+const fetchProduct = `https://kea21-7e1e.restdb.io/rest/byu-products?q={"_id": "${title}"}`;
 
 fetch(fetchProduct, {
     "method": "GET",
