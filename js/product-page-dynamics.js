@@ -20,8 +20,8 @@ fetch(fetchProduct, {
 
 function showProduct(product) {
 // console.log(product);
-// document.querySelector('.product-image').src = product[0].picture;
 document.querySelector('img.product-image').src = product[0].picture[1];
+document.querySelector('img.product-image').alt = `${product[0].name} box image `;
 document.querySelector('title').textContent = `${product[0].name} | BYÙ studio`;
 document.querySelector('.top-details>h1').textContent = product[0].name;
 document.querySelector('.top-details>h2>span').textContent = product[0].price;
@@ -84,3 +84,55 @@ options.forEach(option => {
 }
 
 //using a cart
+const form = document.querySelector('form');
+form.addEventListener('submit', userSubmitted);
+
+function userSubmitted(e) {
+  e.preventDefault();
+};
+
+// cloning items in the cart
+/*cart.contents.forEach((item) => {
+  console.log(item);
+  const cartTemplate = document.querySelector('.cart-card-template').content;
+  const itemclone = cartTemplate.cloneNode(true);
+
+  const id = item._id;
+  const labelEl = itemclone.querySelector('label');
+  labelEl.textContent = item.name;
+  labelEl.setAttribute('for', 'fid-' + id);
+
+  const minusBtn = itemclone.querySelector('.cart-minus')
+  minusBtn.addEventListener('click', () => {
+    cart.minusOne(id);
+  });
+
+  const plusBtn = itemclone.querySelector('.cart-plus')
+  plusBtn.addEventListener('click', () => {
+    cart.plusOne(id);
+  })
+
+  const inputEl = itemclone.querySelector('input');
+  inputEl.id += id;
+  inputEl.name += id;
+  inputEl.value = item.qty;
+
+  inputEl.addEventListener('change', () => {
+    const itemQty = inputEl.valueAsNumber;
+    item.qty = itemQty;
+    console.log('element');
+    console.log(item.qty);
+    cart.update(item);
+    cart.update(item);
+  });
+
+  inputEl.addEventListener('focus', (e) => {
+    e.target.select();
+  })
+
+  const priceEl = itemclone.querySelector('.price-price-baby');
+  priceEl.textContent = item.price;
+
+  
+  cartContent.appendChild(itemclone);
+});*/
