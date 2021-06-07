@@ -23,7 +23,7 @@ options.forEach(option => {
 
         //populate with data
         const labelWax = cloneWax.querySelector('label.waxxx');
-        labelWax.textContent = option.name;
+        labelWax.textContent = `${option.name}, ${option.grams}`;
         labelWax.setAttribute("for", `${option.labels}`);        
         cloneWax.querySelector('.wax-price').textContent = option.price;
         cloneWax.querySelector('.wax-input').setAttribute("id", `${option.labels}`);

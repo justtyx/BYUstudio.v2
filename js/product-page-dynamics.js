@@ -22,7 +22,7 @@ function showProduct(product) {
 // console.log(product);
 // document.querySelector('.product-image').src = product[0].picture;
 document.querySelector('img.product-image').src = product[0].picture[1];
-document.querySelector('title').textContent = `${product[0].name} | BYU studio`;
+document.querySelector('title').textContent = `${product[0].name} | BYÙ studio`;
 document.querySelector('.top-details>h1').textContent = product[0].name;
 document.querySelector('.top-details>h2>span').textContent = product[0].price;
 document.querySelector('.category-breadcrumb').textContent = product[0].category;
