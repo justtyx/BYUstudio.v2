@@ -1,6 +1,8 @@
-p {
+footer > p {
   font-size: var(--body-copy);
   line-height: var(--line-height);
+  margin-left: 7vw;
+  margin-right: 7vw;
 }
 
 footer {
@@ -90,5 +92,12 @@ a {
   a {
     font-size: var(--body-copy-m);
     line-height: var(--line-height);
+  }
+
+  footer > p {
+    font-size: var(--body-copy-m);
+    line-height: var(--line-height);
+    margin-left: 7vw;
+    margin-right: 7vw;
   }
 }
