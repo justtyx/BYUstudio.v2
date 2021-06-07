@@ -9,18 +9,23 @@
   <link rel="stylesheet" href="css/productpage.css">
   <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/cart.css">
-  <!-- <link rel="stylesheet" href="css/menu.css"> -->
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+
   <title>BYU studio jewellery</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
-      <a href=""><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
-      <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
-    </nav>
-    <div class="cart-outer-box">
+    <div class="nav-box">
+      <nav>
+        <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
+        <a href=""><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
+        <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
+      </nav>
+    </div>
+    <div class=" cart-outer-box">
       <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
       <h1 class="page-title">Cart</h1>
       <!-- A place to append cart content ↓ -->
@@ -33,7 +38,8 @@
     </div>
   </header>
   <main>
-    <!-- <section class="sec-hamburger">
+    <!-- hamburger menu start ↓ -->
+    <section class="sec-hamburger">
       <div class="head-hamburger">
         <img class="close-icon" src="assets/cross-white.png" alt="X for closing hamburgermenu" />
       </div>
@@ -203,7 +209,9 @@
         <a href="https://www.pinterest.com/" target="_blank"><img class="somelogo" src="assets/pinterest-white.png"
             alt="Pinterest logo" /></a>
       </div>
-    </section> -->
+    </section>
+    <!-- the end of the menu ↑ -->
+
     <img src="assets/family-kit-box.png" alt="" class="product-image">
     <div class="breadcrumbs flex-container">
       <a href="">
@@ -294,7 +302,50 @@
     </div>
   </main>
   <footer>
-
+    <img src="assets/Black_logo 1.svg" alt="logo-icon" />
+    <p id="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus viverra
+      consectetur adipiscing elit. Rhoncus viverra
+    </p>
+    <p id="contact">+45 12 34 56 78 | hello@byustudio.dk</p>
+    <div id="some">
+      <img src="assets/ig_logo.svg" alt="" /><img src="assets/facebook_logo.svg" alt="" /><img src="assets/Vector.svg"
+        alt="" />
+    </div>
+    <div id="footerNav">
+      <ul>
+        <li>
+          <h5>Shop</h5>
+        </li>
+        <li><a href="">Kits</a></li>
+        <li><a href="">Add-ons</a></li>
+        <li><a href="">Casting</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h5>We Are</h5>
+        </li>
+        <li><a href="">About BYU</a></li>
+        <li><a href="">Manifestop</a></li>
+        <li><a href="">Sustainability</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h5>Get Started</h5>
+        </li>
+        <li><a href="">Inspiration</a></li>
+        <li><a href="">Tutorials</a></li>
+        <li><a href="">FAQ's</a></li>
+      </ul>
+    </div>
+    <div id="legal">
+      <a href="">Privacy policy | </a>
+      <a href="">FAQ's | </a>
+      <a href="">Customer service | </a>
+      <a href="">Shipping | </a>
+      <a href="">Terms and conditions</a>
+    </div>
   </footer>
   <!-- Wax template ↓ -->
   <template id="wax-template">
@@ -336,7 +387,7 @@
   </template>
 </body>
 <script src="js/cart.js"></script>
-<!-- <script src="js/hamburger.js"></script> -->
+<script src="js/hamburger.js"></script>
 <script src="js/product-page-dynamics.js"></script>
 <script src="js/product-page-form-details.js"></script>
 
