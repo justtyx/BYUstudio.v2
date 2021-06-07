@@ -1,461 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/root.css" />
-    <link rel="stylesheet" href="css/inspiration.css" />
-    <link rel="stylesheet" href="css/cart.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/nav.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/root.css" />
+  <link rel="stylesheet" href="css/inspiration.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/cart.css">
   <link rel="stylesheet" href="css/footer.css" />
-    <title>Get inspired | BYÙ Studio</title>
-  </head>
+  <title>Get inspired | BYÙ Studio</title>
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
-        <a href="index.html"
-          ><img src="assets/Black_logo 1.svg" alt="logo-icon"
-        /></a>
-        <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
-      </nav>
-    </header>
-    <header>
-      <div class="cart-outer-box">
-        <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
-        <h1 class="page-title">Cart</h1>
-        <section class="cart-outer-card">
-          <section class="cart-card">
-            <div class="cart-img-item-container">
-              <img src="assets/bgg 1.jpg" alt="" />
-            </div>
-            <h3 class="cart-item-name">Title</h3>
-            <p class="cart-item-description">Some details</p>
-            <p class="cart-item-price">DKK <span>300.00</span></p>
-            <img
-              src="assets/cross-thin.svg"
-              alt="Remove item"
-              class="remove-cart-item"
-            />
-            <div class="quantity-outer-box">
-              <img
-                src="assets/minus.svg"
-                alt="Decrease quantity"
-                class="cart-minus"
-              />
-              <input
-                type="number"
-                min="1"
-                value="1"
-                class="cart-item-quantity"
-              />
-              <img
-                src="assets/plus-rounded-thin.svg"
-                alt="Increase quantity"
-                class="cart-plus"
-              />
-            </div>
-          </section>
-          <section class="cart-card">
-            <div class="cart-img-item-container">
-              <img src="assets/bgg 1.jpg" alt="" />
-            </div>
-            <h3 class="cart-item-name">Title</h3>
-            <p class="cart-item-description">Some details</p>
-            <p class="cart-item-price">DKK <span>300.00</span></p>
-            <img
-              src="assets/cross-thin.svg"
-              alt="Remove item"
-              class="remove-cart-item"
-            />
-            <div class="quantity-outer-box">
-              <img
-                src="assets/minus.svg"
-                alt="Decrease quantity"
-                class="cart-minus"
-              />
-              <input
-                type="number"
-                min="1"
-                value="1"
-                class="cart-item-quantity"
-              />
-              <img
-                src="assets/plus-rounded-thin.svg"
-                alt="Increase quantity"
-                class="cart-plus"
-              />
-            </div>
-          </section>
-          <section class="cart-card">
-            <div class="cart-img-item-container">
-              <img src="assets/bgg 1.jpg" alt="" />
-            </div>
-            <h3 class="cart-item-name">Title</h3>
-            <p class="cart-item-description">Some details</p>
-            <p class="cart-item-price">DKK <span>300.00</span></p>
-            <img
-              src="assets/cross-thin.svg"
-              alt="Remove item"
-              class="remove-cart-item"
-            />
-            <div class="quantity-outer-box">
-              <img
-                src="assets/minus.svg"
-                alt="Decrease quantity"
-                class="cart-minus"
-              />
-              <input
-                type="number"
-                min="1"
-                value="1"
-                class="cart-item-quantity"
-              />
-              <img
-                src="assets/plus-rounded-thin.svg"
-                alt="Increase quantity"
-                class="cart-plus"
-              />
-            </div>
-          </section>
+<body>
+  <header>
+    <nav>
+      <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
+      <a href="index.html"><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
+      <img src="assets/cart.svg" alt="cart-icon" class="toggle-btn" />
+    </nav>
+    <div class=" cart-outer-box">
+      <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+      <h1 class="page-title">Cart</h1>
+      <!-- A place to append cart content ↓ -->
+      <section class="cart-outer-card">
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/kit-for-two-box.webp" alt="" />
+          </div>
+          <h3 class="cart-item-name">Kit for two</h3>
+          <p class="cart-item-description">No extras</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
         </section>
-        <div class="subtotal-flex">
-          <h3>Subtotal</h3>
-          <p>DKK <span>300.00</span></p>
-        </div>
-        <a href="#" class="cart-to-checkout"
-          ><button>Proceed to checkout</button></a
-        >
+      </section>
+      <div class="subtotal-flex">
+        <h3>Subtotal</h3>
+        <p>DKK <span>300.00</span></p>
       </div>
-    </header>
-    <section class="sec-hamburger">
-      <div class="head-hamburger">
-        <img
-          class="close-icon"
-          src="assets/cross-white.png"
-          alt="X for closing hamburgermenu"
-        />
+      <a href="checkout-info.html" class="cart-to-checkout"><button>Proceed to checkout</button></a>
+    </div>
+  </header>
+  <header>
+    <div class="cart-outer-box">
+      <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+      <h1 class="page-title">Cart</h1>
+      <section class="cart-outer-card">
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt="" />
+          </div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
+        </section>
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt="" />
+          </div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
+        </section>
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/bgg 1.jpg" alt="" />
+          </div>
+          <h3 class="cart-item-name">Title</h3>
+          <p class="cart-item-description">Some details</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
+        </section>
+      </section>
+      <div class="subtotal-flex">
+        <h3>Subtotal</h3>
+        <p>DKK <span>300.00</span></p>
       </div>
+      <a href="#" class="cart-to-checkout"><button>Proceed to checkout</button></a>
+    </div>
+  </header>
+  <section class="sec-hamburger">
+    <div class="head-hamburger">
+      <img class="close-icon" src="assets/cross-white.png" alt="X for closing hamburgermenu" />
+    </div>
 
-      <div class="body-hamburger">
-        <div class="body-hamburger-text">
-          <a href="index.html">
-            <h1>HOME</h1>
+    <div class="body-hamburger">
+      <div class="body-hamburger-text">
+        <a href="index.html">
+          <h1>HOME</h1>
+        </a>
+
+        <h1 class="hamcat-shop">SHOP</h1>
+        <div class="pages-shop pages hidden">
+          <a href="productlist.html?kits=true">
+            <h2>KITS</h2>
           </a>
+          <a href="productlist.html?refills=true">
+            <h2>REFILLS</h2>
+          </a>
+          <a href="productlist.html?casting=true">
+            <h2>CASTING</h2>
+          </a>
+        </div>
+        <div class="big-pages big-pages-shop hidden">
+          <div class="big-pages-header">
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="BYU studio logo" />
+          </div>
+          <div class="big-pages-body-flex">
+            <div class="big-pages-body">
+              <a href="productlist.html?kits=true">
+                <img class="ham-cat-image" src="assets/shop-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>KITS</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="productlist.html?refills=true">
+                <img class="ham-cat-image" src="assets/refills-blur.png" alt="ring made from blue wax" />
+                <div class="big-link-flex">
+                  <h2>REFILLS</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="productlist.html?casting=true">
+                <img class="ham-cat-image" src="assets/casting-blur.png" alt="hands with several unique silver rings" />
+                <div class="big-link-flex">
+                  <h2>CASTING</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="big-pages-footer">
+            <p>hello@byustudio.dk | +45 12 34 56 78</p>
+          </div>
+        </div>
 
-          <h1 class="hamcat-shop">SHOP</h1>
-          <div class="pages-shop pages hidden">
-            <a href="productlist.html?kits=true">
-              <h2>KITS</h2>
-            </a>
-            <a href="productlist.html?refills=true">
-              <h2>REFILLS</h2>
-            </a>
-            <a href="productlist.html?casting=true">
-              <h2>CASTING</h2>
-            </a>
+        <h1 class="hamcat-about">ABOUT BYÙ STUDIO</h1>
+        <div class="pages-about pages hidden">
+          <a href="about.html">
+            <h2>ABOUT US</h2>
+          </a>
+          <a href="manifesto.html">
+            <h2>MANIFESTO</h2>
+          </a>
+          <a href="sustainanability.html">
+            <h2>SUSTAINABILITY</h2>
+          </a>
+          <a href="contact.html">
+            <h2>CONTACT US</h2>
+          </a>
+        </div>
+        <div class="big-pages big-pages-about hidden">
+          <div class="big-pages-header">
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
           </div>
-          <div class="big-pages big-pages-shop hidden">
-            <div class="big-pages-header">
-              <img
-                class="big-pages-header-logo"
-                src="assets/Black_logo.png"
-                alt="BYU studio logo"
-              />
-            </div>
-            <div class="big-pages-body-flex">
-              <div class="big-pages-body">
-                <a href="productlist.html?kits=true">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/shop-blur.png"
-                    alt=""
-                  />
-                  <div class="big-link-flex">
-                    <h2>KITS</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="productlist.html?refills=true">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/refills-blur.png"
-                    alt="ring made from blue wax"
-                  />
-                  <div class="big-link-flex">
-                    <h2>REFILLS</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="productlist.html?casting=true">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/casting-blur.png"
-                    alt="hands with several unique silver rings"
-                  />
-                  <div class="big-link-flex">
-                    <h2>CASTING</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="big-pages-footer">
-              <p>hello@byustudio.dk | +45 12 34 56 78</p>
+          <div class="big-pages-body-flex">
+            <div class="big-pages-body">
+              <a href="about.html">
+                <img class="ham-cat-image" src="assets/about-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>ABOUT US</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="manifesto.html">
+                <img class="ham-cat-image" src="assets/manifesto-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>MANIFESTO</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="sustainanability.html">
+                <img class="ham-cat-image" src="assets/sustainability-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>SUSTAINABILITY</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="contact.html">
+                <img class="ham-cat-image" src="assets/contact-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>CONTACT US</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
             </div>
           </div>
+          <div class="big-pages-footer">
+            <p>hello@byustudio.dk | +45 12 34 56 78</p>
+          </div>
+        </div>
 
-          <h1 class="hamcat-about">ABOUT BYÙ STUDIO</h1>
-          <div class="pages-about pages hidden">
-            <a href="about.html">
-              <h2>ABOUT US</h2>
-            </a>
-            <a href="manifesto.html">
-              <h2>MANIFESTO</h2>
-            </a>
-            <a href="sustainanability.html">
-              <h2>SUSTAINABILITY</h2>
-            </a>
-            <a href="contact.html">
-              <h2>CONTACT US</h2>
-            </a>
+        <h1 class="hamcat-start">GET STARTED</h1>
+        <div class="pages-getstarted pages hidden">
+          <a href="faq.html">
+            <h2>FAQ</h2>
+          </a>
+          <a href="inspiration.html">
+            <h2>INSPIRATION</h2>
+          </a>
+          <a href="tutorial.html">
+            <h2>TUTORIALS</h2>
+          </a>
+        </div>
+        <div class="big-pages big-pages-getstarted hidden">
+          <div class="big-pages-header">
+            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
           </div>
-          <div class="big-pages big-pages-about hidden">
-            <div class="big-pages-header">
-              <img
-                class="big-pages-header-logo"
-                src="assets/Black_logo.png"
-                alt=""
-              />
-            </div>
-            <div class="big-pages-body-flex">
-              <div class="big-pages-body">
-                <a href="about.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/about-blur.png"
-                    alt=""
-                  />
-                  <div class="big-link-flex">
-                    <h2>ABOUT US</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="manifesto.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/manifesto-blur.png"
-                    alt=""
-                  />
-                  <div class="big-link-flex">
-                    <h2>MANIFESTO</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="sustainanability.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/sustainability-blur.png"
-                    alt=""
-                  />
-                  <div class="big-link-flex">
-                    <h2>SUSTAINABILITY</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="contact.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/contact-blur.png"
-                    alt=""
-                  />
-                  <div class="big-link-flex">
-                    <h2>CONTACT US</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="big-pages-footer">
-              <p>hello@byustudio.dk | +45 12 34 56 78</p>
+          <div class="big-pages-body-flex">
+            <div class="big-pages-body">
+              <a href="faq.html">
+                <img class="ham-cat-image" src="assets/faq-blur.png" alt="" />
+                <div class="big-link-flex">
+                  <h2>FAQ</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="inspiration.html">
+                <img class="ham-cat-image" src="assets/inspiration-blur.png" alt="ring made from blue wax" />
+                <div class="big-link-flex">
+                  <h2>INSPIRATION</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
+              <a href="tutorial.html">
+                <img class="ham-cat-image" src="assets/tutorials-blur.png"
+                  alt="hands with several unique silver rings" />
+                <div class="big-link-flex">
+                  <h2>Tutorials</h2>
+                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
+                </div>
+              </a>
             </div>
           </div>
-
-          <h1 class="hamcat-start">GET STARTED</h1>
-          <div class="pages-getstarted pages hidden">
-            <a href="faq.html">
-              <h2>FAQ</h2>
-            </a>
-            <a href="inspiration.html">
-              <h2>INSPIRATION</h2>
-            </a>
-            <a href="tutorial.html">
-              <h2>TUTORIALS</h2>
-            </a>
-          </div>
-          <div class="big-pages big-pages-getstarted hidden">
-            <div class="big-pages-header">
-              <img
-                class="big-pages-header-logo"
-                src="assets/Black_logo.png"
-                alt=""
-              />
-            </div>
-            <div class="big-pages-body-flex">
-              <div class="big-pages-body">
-                <a href="faq.html">
-                  <img class="ham-cat-image" src="assets/faq-blur.png" alt="" />
-                  <div class="big-link-flex">
-                    <h2>FAQ</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="inspiration.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/inspiration-blur.png"
-                    alt="ring made from blue wax"
-                  />
-                  <div class="big-link-flex">
-                    <h2>INSPIRATION</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-                <a href="tutorial.html">
-                  <img
-                    class="ham-cat-image"
-                    src="assets/tutorials-blur.png"
-                    alt="hands with several unique silver rings"
-                  />
-                  <div class="big-link-flex">
-                    <h2>Tutorials</h2>
-                    <img
-                      class="ham-cat-arrow"
-                      src="assets/arrow-thin.png"
-                      alt="arrow"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="big-pages-footer">
-              <p>hello@byustudio.dk | +45 12 34 56 78</p>
-            </div>
+          <div class="big-pages-footer">
+            <p>hello@byustudio.dk | +45 12 34 56 78</p>
           </div>
         </div>
       </div>
-      <div class="footer-hamburger someiconflex">
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            class="somelogo"
-            src="assets/instagram-white.png"
-            alt="Instagram logo"
-        /></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            class="somelogo"
-            src="assets/facebook-white.png"
-            alt="Facebook logo"
-        /></a>
-        <a href="https://www.pinterest.com/" target="_blank"
-          ><img
-            class="somelogo"
-            src="assets/pinterest-white.png"
-            alt="Pinterest logo"
-        /></a>
-      </div>
-    </section>
-    <main></main>
-    <footer>
-      <img src="assets/Black_logo 1.svg" alt="logo-icon" />
-      <p id="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus viverra
-        consectetur adipiscing elit. Rhoncus viverra
-      </p>
-      <p id="contact">+45 12 34 56 78 | hello@byustudio.dk</p>
-      <div id="some">
-        <img src="assets/ig_logo.svg" alt="" /><img
-          src="assets/facebook_logo.svg"
-          alt=""
-        /><img src="assets/Vector.svg" alt="" />
-      </div>
-      <div id="footerNav">
-        <ul>
-          <li>
-            <h5>Shop</h5>
-          </li>
-          <li><a href="productlist.html?kits=true">Kits</a></li>
-          <li><a href="productlist.html?refills=true">Add-ons</a></li>
-          <li><a href="productlist.html?casting=true">Casting</a></li>
-        </ul>
-        <ul>
-          <li>
-            <h5>We Are</h5>
-          </li>
-          <li><a href="about.html">About BYU</a></li>
-          <li><a href="manifesto.html">Manifesto</a></li>
-          <li><a href="sustainanability.html">Sustainability</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul>
-          <li>
-            <h5>Get Started</h5>
-          </li>
-          <li><a href="inspiration.html">Inspiration</a></li>
-          <li><a href="tutorial.html">Tutorials</a></li>
-          <li><a href="faq.html">FAQ's</a></li>
-        </ul>
-      </div>
-      <div id="legal">
-        <a href="#">Privacy policy | </a>
-        <a href="faq.html">FAQ's | </a>
-        <a href="#">Customer service | </a>
-        <a href="#">Shipping | </a>
-        <a href="#">Terms and conditions</a>
-      </div>
-    </footer>
-  </body>
-  <script src="js/cart.js"></script>
-  <script src="js/hamburger.js"></script>
+    </div>
+    <div class="footer-hamburger someiconflex">
+      <a href="https://www.instagram.com/" target="_blank"><img class="somelogo" src="assets/instagram-white.png"
+          alt="Instagram logo" /></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="somelogo" src="assets/facebook-white.png"
+          alt="Facebook logo" /></a>
+      <a href="https://www.pinterest.com/" target="_blank"><img class="somelogo" src="assets/pinterest-white.png"
+          alt="Pinterest logo" /></a>
+    </div>
+  </section>
+  <main></main>
+  <footer>
+    <img src="assets/Black_logo 1.svg" alt="logo-icon" />
+    <p id="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus viverra
+      consectetur adipiscing elit. Rhoncus viverra
+    </p>
+    <p id="contact">+45 12 34 56 78 | hello@byustudio.dk</p>
+    <div id="some">
+      <img src="assets/ig_logo.svg" alt="" /><img src="assets/facebook_logo.svg" alt="" /><img src="assets/Vector.svg"
+        alt="" />
+    </div>
+    <div id="footerNav">
+      <ul>
+        <li>
+          <h5>Shop</h5>
+        </li>
+        <li><a href="productlist.html?kits=true">Kits</a></li>
+        <li><a href="productlist.html?refills=true">Add-ons</a></li>
+        <li><a href="productlist.html?casting=true">Casting</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h5>We Are</h5>
+        </li>
+        <li><a href="about.html">About BYU</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+        <li><a href="sustainanability.html">Sustainability</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h5>Get Started</h5>
+        </li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="tutorial.html">Tutorials</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+      </ul>
+    </div>
+    <div id="legal">
+      <a href="#">Privacy policy | </a>
+      <a href="faq.html">FAQ's | </a>
+      <a href="#">Customer service | </a>
+      <a href="#">Shipping | </a>
+      <a href="#">Terms and conditions</a>
+    </div>
+  </footer>
+</body>
+<script src="js/cart.js"></script>
+<script src="js/hamburger.js"></script>
+
 </html>

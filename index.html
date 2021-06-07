@@ -21,6 +21,32 @@
       <a href="index.html"><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
       <img src="assets/cart.svg" alt="cart-icon" />
     </nav>
+    <div class=" cart-outer-box">
+      <img src="assets/cross-thin.svg" alt="Remove item" class="close-cart" />
+      <h1 class="page-title">Cart</h1>
+      <!-- A place to append cart content ↓ -->
+      <section class="cart-outer-card">
+        <section class="cart-card">
+          <div class="cart-img-item-container">
+            <img src="assets/kit-for-two-box.webp" alt="" />
+          </div>
+          <h3 class="cart-item-name">Kit for two</h3>
+          <p class="cart-item-description">No extras</p>
+          <p class="cart-item-price">DKK <span>300.00</span></p>
+          <img src="assets/cross-thin.svg" alt="Remove item" class="remove-cart-item" />
+          <div class="quantity-outer-box">
+            <img src="assets/minus.svg" alt="Decrease quantity" class="cart-minus" />
+            <input type="number" min="1" value="1" class="cart-item-quantity" />
+            <img src="assets/plus-rounded-thin.svg" alt="Increase quantity" class="cart-plus" />
+          </div>
+        </section>
+      </section>
+      <div class="subtotal-flex">
+        <h3>Subtotal</h3>
+        <p>DKK <span>300.00</span></p>
+      </div>
+      <a href="checkout-info.html" class="cart-to-checkout"><button>Proceed to checkout</button></a>
+    </div>
   </header>
   <section class="sec-hamburger">
     <div class="head-hamburger">
