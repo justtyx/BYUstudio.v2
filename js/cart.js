@@ -49,7 +49,9 @@ addToCart.addEventListener('click', () => {
     if(cart.contents === 0) {
       cartContent.innerHTML = "<h2>The cart is empty</h2>";
     } else {
-  
+    
+
+    // cloning items in the cart
     cart.contents.forEach((item) => {
       console.log(item);
       const cartTemplate = document.querySelector('.cart-template').content;
