@@ -16,6 +16,9 @@
   align-items: center;
   justify-content: center;
 }
+#title > img {
+  border-radius: 0.4vw;
+}
 
 #decorative {
   font-family: "autography";
