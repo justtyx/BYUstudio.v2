@@ -42,7 +42,7 @@ function showKits(products) {
     //adjust stuff
     copy.querySelector(
       ".product a"
-    ).href = `productpage.html?id=${product._id}`;
+    ).href = `productpage.html?q=${product.name}`;
     copy.querySelector(".img01").src = product.picture[0];
     copy.querySelector(".product-title").textContent = product.name;
     copy.querySelector(".price span").textContent = product.price;

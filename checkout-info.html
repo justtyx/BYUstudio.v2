@@ -1,312 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Checkout | part 1 of 3t</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/root.css" />
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/checkout.css" />
-  <title>Checkout | part 1 of 3t</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
-      <a href="index.html"><img src="assets/Black_logo 1.svg" alt="logo-icon" /></a>
-      <img class="currenttabcheckout" src="assets/cart.svg" alt="cart-icon" />
-    </nav>
-  </header>
-  <section class="sec-hamburger">
-    <div class="head-hamburger">
-      <img class="close-icon" src="assets/cross-white.png" alt="X for closing hamburgermenu" />
-    </div>
-
-    <div class="body-hamburger">
-      <div class="body-hamburger-text">
-        <a href="index.html">
-          <h1>HOME</h1>
-        </a>
-
-        <h1 class="hamcat-shop">SHOP</h1>
-        <div class="pages-shop pages hidden">
-          <a href="productlist.html">
-            <h2>KITS</h2>
-          </a>
-          <a href="productlist.html">
-            <h2>REFILLS</h2>
-          </a>
-          <a href="productlist.html">
-            <h2>CASTING</h2>
-          </a>
-        </div>
-        <div class="big-pages big-pages-shop hidden">
-          <div class="big-pages-header">
-            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="BYU studio logo" />
-          </div>
-          <div class="big-pages-body-flex">
-            <div class="big-pages-body">
-              <a href="productlist.html">
-                <img class="ham-cat-image" src="assets/shop-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>KITS</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="productlist.html">
-                <img class="ham-cat-image" src="assets/refills-blur.png" alt="ring made from blue wax" />
-                <div class="big-link-flex">
-                  <h2>REFILLS</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="productlist.html">
-                <img class="ham-cat-image" src="assets/casting-blur.png" alt="hands with several unique silver rings" />
-                <div class="big-link-flex">
-                  <h2>CASTING</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="big-pages-footer">
-            <p>hello@byustudio.dk | +45 12 34 56 78</p>
-          </div>
-        </div>
-
-        <h1 class="hamcat-about">ABOUT BYÙ STUDIO</h1>
-        <div class="pages-about pages hidden">
-          <a href="about.html">
-            <h2>ABOUT US</h2>
-          </a>
-          <a href="manifesto.html">
-            <h2>MANIFESTO</h2>
-          </a>
-          <a href="sustainanability.html">
-            <h2>SUSTAINABILITY</h2>
-          </a>
-          <a href="contact.html">
-            <h2>CONTACT US</h2>
-          </a>
-        </div>
-        <div class="big-pages big-pages-about hidden">
-          <div class="big-pages-header">
-            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
-          </div>
-          <div class="big-pages-body-flex">
-            <div class="big-pages-body">
-              <a href="about.html">
-                <img class="ham-cat-image" src="assets/about-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>ABOUT US</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="manifesto.html">
-                <img class="ham-cat-image" src="assets/manifesto-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>MANIFESTO</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="sustainanability.html">
-                <img class="ham-cat-image" src="assets/sustainability-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>SUSTAINABILITY</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="contact.html">
-                <img class="ham-cat-image" src="assets/contact-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>CONTACT US</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="big-pages-footer">
-            <p>hello@byustudio.dk | +45 12 34 56 78</p>
-          </div>
-        </div>
-
-        <h1 class="hamcat-start">GET STARTED</h1>
-        <div class="pages-getstarted pages hidden">
-          <a href="faq.html">
-            <h2>FAQ</h2>
-          </a>
-          <a href="inspiration.html">
-            <h2>INSPIRATION</h2>
-          </a>
-          <a href="tutorial.html">
-            <h2>TUTORIALS</h2>
-          </a>
-        </div>
-        <div class="big-pages big-pages-getstarted hidden">
-          <div class="big-pages-header">
-            <img class="big-pages-header-logo" src="assets/Black_logo.png" alt="" />
-          </div>
-          <div class="big-pages-body-flex">
-            <div class="big-pages-body">
-              <a href="faq.html">
-                <img class="ham-cat-image" src="assets/faq-blur.png" alt="" />
-                <div class="big-link-flex">
-                  <h2>FAQ</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="inspiration.html">
-                <img class="ham-cat-image" src="assets/inspiration-blur.png" alt="ring made from blue wax" />
-                <div class="big-link-flex">
-                  <h2>INSPIRATION</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-              <a href="tutorial.html">
-                <img class="ham-cat-image" src="assets/tutorials-blur.png"
-                  alt="hands with several unique silver rings" />
-                <div class="big-link-flex">
-                  <h2>Tutorials</h2>
-                  <img class="ham-cat-arrow" src="assets/arrow-thin.png" alt="arrow" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="big-pages-footer">
-            <p>hello@byustudio.dk | +45 12 34 56 78</p>
-          </div>
-        </div>
+  <body>
+    <header>
+      <nav>
+        <img class="open-button" src="assets/menu.svg" alt="menu-icon" />
+        <a href="index.html"
+          ><img src="assets/Black_logo 1.svg" alt="logo-icon"
+        /></a>
+        <img class="currenttabcheckout" src="assets/cart.svg" alt="cart-icon" />
+      </nav>
+    </header>
+    <section class="sec-hamburger">
+      <div class="head-hamburger">
+        <img
+          class="close-icon"
+          src="assets/cross-white.png"
+          alt="X for closing hamburgermenu"
+        />
       </div>
-    </div>
-    <div class="footer-hamburger someiconflex">
-      <a href="https://www.instagram.com/" target="_blank"><img class="somelogo" src="assets/instagram-white.png"
-          alt="Instagram logo" /></a>
-      <a href="https://www.facebook.com/" target="_blank"><img class="somelogo" src="assets/facebook-white.png"
-          alt="Facebook logo" /></a>
-      <a href="https://www.pinterest.com/" target="_blank"><img class="somelogo" src="assets/pinterest-white.png"
-          alt="Pinterest logo" /></a>
-    </div>
-  </section>
-  <section class="ordersummarymobile">
-    <div class="mobilesummarycontent">
-      <div class="summaryflex">
-        <p><span class="summarytoggletext">See</span> order summary</p>
-        <img src="assets/openfat.png" alt="arrow" class="sumarrow" />
-      </div>
-      <div class="summaryphone hidden">
-        <div class="templateparent-mobile">
-          <template class="template-mobile">
-            <div class="cartitem">
-              <img class="cartproductimage" src="" alt="product image" />
-              <div class="cartproducttext">
-                <div>
-                  <p class="cartproductname">Product Name</p>
-                  <!-- <p class="cartproductdescription">product description</p> -->
-                </div>
-                <p class="cartproductprice"><span>234</span> DKK</p>
+
+      <div class="body-hamburger">
+        <div class="body-hamburger-text">
+          <a href="index.html">
+            <h1>HOME</h1>
+          </a>
+
+          <h1 class="hamcat-shop">SHOP</h1>
+          <div class="pages-shop pages hidden">
+            <a href="productlist.html?kits=true">
+              <h2>KITS</h2>
+            </a>
+            <a href="productlist.html?refills=true">
+              <h2>REFILLS</h2>
+            </a>
+            <a href="productlist.html?casting=true">
+              <h2>CASTING</h2>
+            </a>
+          </div>
+          <div class="big-pages big-pages-shop hidden">
+            <div class="big-pages-header">
+              <img
+                class="big-pages-header-logo"
+                src="assets/Black_logo.png"
+                alt="BYU studio logo"
+              />
+            </div>
+            <div class="big-pages-body-flex">
+              <div class="big-pages-body">
+                <a href="productlist.html?kits=true">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/shop-blur.png"
+                    alt=""
+                  />
+                  <div class="big-link-flex">
+                    <h2>KITS</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="productlist.html?refills=true">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/refills-blur.png"
+                    alt="ring made from blue wax"
+                  />
+                  <div class="big-link-flex">
+                    <h2>REFILLS</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="productlist.html?casting=true">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/casting-blur.png"
+                    alt="hands with several unique silver rings"
+                  />
+                  <div class="big-link-flex">
+                    <h2>CASTING</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
               </div>
-              <img class="crossproduct" src="assets/cross.png" alt="cross for removing item" />
             </div>
-          </template>
-        </div>
-        <div>
-          <div class="divider"></div>
-          <div class="totalprice">
-            <p>Total:</p>
-            <p class="calctotalprice">DKK 123.00</p>
+            <div class="big-pages-footer">
+              <p>hello@byustudio.dk | +45 12 34 56 78</p>
+            </div>
+          </div>
+
+          <h1 class="hamcat-about">ABOUT BYÙ STUDIO</h1>
+          <div class="pages-about pages hidden">
+            <a href="about.html">
+              <h2>ABOUT US</h2>
+            </a>
+            <a href="manifesto.html">
+              <h2>MANIFESTO</h2>
+            </a>
+            <a href="sustainanability.html">
+              <h2>SUSTAINABILITY</h2>
+            </a>
+            <a href="contact.html">
+              <h2>CONTACT US</h2>
+            </a>
+          </div>
+          <div class="big-pages big-pages-about hidden">
+            <div class="big-pages-header">
+              <img
+                class="big-pages-header-logo"
+                src="assets/Black_logo.png"
+                alt=""
+              />
+            </div>
+            <div class="big-pages-body-flex">
+              <div class="big-pages-body">
+                <a href="about.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/about-blur.png"
+                    alt=""
+                  />
+                  <div class="big-link-flex">
+                    <h2>ABOUT US</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="manifesto.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/manifesto-blur.png"
+                    alt=""
+                  />
+                  <div class="big-link-flex">
+                    <h2>MANIFESTO</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="sustainanability.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/sustainability-blur.png"
+                    alt=""
+                  />
+                  <div class="big-link-flex">
+                    <h2>SUSTAINABILITY</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="contact.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/contact-blur.png"
+                    alt=""
+                  />
+                  <div class="big-link-flex">
+                    <h2>CONTACT US</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="big-pages-footer">
+              <p>hello@byustudio.dk | +45 12 34 56 78</p>
+            </div>
+          </div>
+
+          <h1 class="hamcat-start">GET STARTED</h1>
+          <div class="pages-getstarted pages hidden">
+            <a href="faq.html">
+              <h2>FAQ</h2>
+            </a>
+            <a href="inspiration.html">
+              <h2>INSPIRATION</h2>
+            </a>
+            <a href="tutorial.html">
+              <h2>TUTORIALS</h2>
+            </a>
+          </div>
+          <div class="big-pages big-pages-getstarted hidden">
+            <div class="big-pages-header">
+              <img
+                class="big-pages-header-logo"
+                src="assets/Black_logo.png"
+                alt=""
+              />
+            </div>
+            <div class="big-pages-body-flex">
+              <div class="big-pages-body">
+                <a href="faq.html">
+                  <img class="ham-cat-image" src="assets/faq-blur.png" alt="" />
+                  <div class="big-link-flex">
+                    <h2>FAQ</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="inspiration.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/inspiration-blur.png"
+                    alt="ring made from blue wax"
+                  />
+                  <div class="big-link-flex">
+                    <h2>INSPIRATION</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a href="tutorial.html">
+                  <img
+                    class="ham-cat-image"
+                    src="assets/tutorials-blur.png"
+                    alt="hands with several unique silver rings"
+                  />
+                  <div class="big-link-flex">
+                    <h2>Tutorials</h2>
+                    <img
+                      class="ham-cat-arrow"
+                      src="assets/arrow-thin.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="big-pages-footer">
+              <p>hello@byustudio.dk | +45 12 34 56 78</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <main>
-    <div class="breadcrumbs">
-      <p>
-        <span class="currentcrumb">Information</span> > Payment > Confirmation
-      </p>
-    </div>
-    <form class="infoform" action="checkout-payment.html">
-      <section class="sec-contact">
-        <h4>Contact Information</h4>
-        <input type="text" id="email" name="email" placeholder="Email Address" />
-      </section>
-      <section class="sec-shippinginfo">
-        <h4>Shipping Information</h4>
-        <div class="two-box-flex">
-          <input type="text" id="firstname" name="firstname" placeholder="First Name" />
-          <input type="text" id="surname" name="surname" placeholder="Surname" />
-        </div>
-        <input type="tel" name="phonenumber" id="phonenumber" placeholder="Telephone number" />
-        <input type="text" name="address" id="address" placeholder="Address (Street, Number)" />
-        <div class="two-box-flex">
-          <input type="text" name="city" id="city" placeholder="City" />
-          <input type="number" name="postalcode" id="postalcode" placeholder="Postal Code" />
-        </div>
-        <input type="text" name="country" id="country" placeholder="Country" />
-      </section>
-      <section class="sec-billingaddress">
-        <h4>Billing Address</h4>
-        <input type="radio" id="sameasshippingaddress" name="billingaddress" value="same-address" />
-        <label for="sameasshippingaddress">Same as shipping address</label>
-        <input type="radio" id="differentshippingaddress" name="billingaddress" value="other-address" />
-        <label for="differentshippingaddress">Use different billing address</label>
-      </section>
-      <section class="sec-deliveryoption">
-        <h4>Delivery Option</h4>
-        <input type="radio" id="postnord" name="deliveryoption" value="PostNord - DKK 39.00" />
-        <label for="postnord">PostNord - DKK 39.00</label>
-        <input type="radio" id="pickupspot" name="deliveryoption" value="Pick up spot - DKK 19.00" />
-        <label for="pickupspot">Pick up spot - DKK 19.00</label>
-        <input type="radio" id="personalpickup" name="deliveryoption" value="Personal pick up - Free" />
-        <label for="personalpickup">Personal pick up - Free</label>
-      </section>
-      <div class="buttonflex">
-        <button type="submit">Continue to Payment</button>
-        <a href="index.html"> Return to frontpage</a>
+      <div class="footer-hamburger someiconflex">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            class="somelogo"
+            src="assets/instagram-white.png"
+            alt="Instagram logo"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            class="somelogo"
+            src="assets/facebook-white.png"
+            alt="Facebook logo"
+        /></a>
+        <a href="https://www.pinterest.com/" target="_blank"
+          ><img
+            class="somelogo"
+            src="assets/pinterest-white.png"
+            alt="Pinterest logo"
+        /></a>
       </div>
-    </form>
-    <section class="ordersummarydesktop">
-      <div class="ordersummarydesktopcontent">
-        <h2 class="lessmarginplease">Order Summary</h2>
-        <div class="templateparent-desktop">
-          <template class="template-desktop">
-            <div class="cartitem">
-              <img class="cartproductimage" src="" alt="product image" />
-              <div class="cartproducttext">
-                <div>
-                  <p class="cartproductname">Product Name</p>
-                  <!-- <p class="cartproductdescription">product description</p> -->
-                </div>
-                <p class="cartproductprice"><span>234</span> DKK</p>
-              </div>
-              <img class="crossproduct" src="assets/cross.png" alt="cross for removing item" />
-            </div>
-          </template>
+    </section>
+    <section class="ordersummarymobile">
+      <div class="mobilesummarycontent">
+        <div class="summaryflex">
+          <p><span class="summarytoggletext">See</span> order summary</p>
+          <img src="assets/openfat.png" alt="arrow" class="sumarrow" />
         </div>
-        <div>
-          <div class="divider"></div>
-          <div class="totalprice priceflex">
-            <p>Total:</p>
-            <p class="calctotalprice">DKK <span>123.00</span></p>
+        <div class="summaryphone hidden">
+          <div class="templateparent-mobile">
+            <template class="template-mobile">
+              <div class="cartitem">
+                <img class="cartproductimage" src="" alt="product image" />
+                <div class="cartproducttext">
+                  <div>
+                    <p class="cartproductname">Product Name</p>
+                    <!-- <p class="cartproductdescription">product description</p> -->
+                  </div>
+                  <p class="cartproductprice"><span>234</span> DKK</p>
+                </div>
+                <img
+                  class="crossproduct"
+                  src="assets/cross.png"
+                  alt="cross for removing item"
+                />
+              </div>
+            </template>
+          </div>
+          <div>
+            <div class="divider"></div>
+            <div class="totalprice">
+              <p>Total:</p>
+              <p class="calctotalprice">DKK 123.00</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
-  <footer class="small-footer-wrap">
-    <p>
-      <a href="#">Privacy Policy</a> | <a href="faq.html">FAQ</a> |
-      <a href="#">Customer Service</a> | <a href="#">Shipping</a> |
-      <a href="#">Terms and Conditions</a>
-    </p>
-  </footer>
-</body>
-<script src="js/ordersummary.js"></script>
-<script src="js/checkout-info.js"></script>
-<script src="js/hamburger.js"></script>
-
+    <main>
+      <div class="breadcrumbs">
+        <p>
+          <span class="currentcrumb">Information</span> > Payment > Confirmation
+        </p>
+      </div>
+      <form class="infoform" action="checkout-payment.html">
+        <section class="sec-contact">
+          <h4>Contact Information</h4>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+        </section>
+        <section class="sec-shippinginfo">
+          <h4>Shipping Information</h4>
+          <div class="two-box-flex">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Surname"
+            />
+          </div>
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Telephone number"
+          />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Address (Street, Number)"
+          />
+          <div class="two-box-flex">
+            <input type="text" name="city" id="city" placeholder="City" />
+            <input
+              type="number"
+              name="postalcode"
+              id="postalcode"
+              placeholder="Postal Code"
+            />
+          </div>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
+          />
+        </section>
+        <section class="sec-billingaddress">
+          <h4>Billing Address</h4>
+          <input
+            type="radio"
+            id="sameasshippingaddress"
+            name="billingaddress"
+            value="same-address"
+          />
+          <label for="sameasshippingaddress">Same as shipping address</label>
+          <input
+            type="radio"
+            id="differentshippingaddress"
+            name="billingaddress"
+            value="other-address"
+          />
+          <label for="differentshippingaddress"
+            >Use different billing address</label
+          >
+        </section>
+        <section class="sec-deliveryoption">
+          <h4>Delivery Option</h4>
+          <input
+            type="radio"
+            id="postnord"
+            name="deliveryoption"
+            value="PostNord - DKK 39.00"
+          />
+          <label for="postnord">PostNord - DKK 39.00</label>
+          <input
+            type="radio"
+            id="pickupspot"
+            name="deliveryoption"
+            value="Pick up spot - DKK 19.00"
+          />
+          <label for="pickupspot">Pick up spot - DKK 19.00</label>
+          <input
+            type="radio"
+            id="personalpickup"
+            name="deliveryoption"
+            value="Personal pick up - Free"
+          />
+          <label for="personalpickup">Personal pick up - Free</label>
+        </section>
+        <div class="buttonflex">
+          <button type="submit">Continue to Payment</button>
+          <a href="index.html"> Return to frontpage</a>
+        </div>
+      </form>
+      <section class="ordersummarydesktop">
+        <div class="ordersummarydesktopcontent">
+          <h2 class="lessmarginplease">Order Summary</h2>
+          <div class="templateparent-desktop">
+            <template class="template-desktop">
+              <div class="cartitem">
+                <img class="cartproductimage" src="" alt="product image" />
+                <div class="cartproducttext">
+                  <div>
+                    <p class="cartproductname">Product Name</p>
+                    <!-- <p class="cartproductdescription">product description</p> -->
+                  </div>
+                  <p class="cartproductprice"><span>234</span> DKK</p>
+                </div>
+                <img
+                  class="crossproduct"
+                  src="assets/cross.png"
+                  alt="cross for removing item"
+                />
+              </div>
+            </template>
+          </div>
+          <div>
+            <div class="divider"></div>
+            <div class="totalprice priceflex">
+              <p>Total:</p>
+              <p class="calctotalprice">DKK <span>123.00</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="small-footer-wrap">
+      <p>
+        <a href="#">Privacy Policy</a> | <a href="faq.html">FAQ</a> |
+        <a href="#">Customer Service</a> | <a href="#">Shipping</a> |
+        <a href="#">Terms and Conditions</a>
+      </p>
+    </footer>
+  </body>
+  <script src="js/ordersummary.js"></script>
+  <script src="js/checkout-info.js"></script>
+  <script src="js/hamburger.js"></script>
 </html>
