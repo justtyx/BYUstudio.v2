@@ -14,12 +14,25 @@
     font-family: "autography";
   }
 
+  .intro-text {
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto 4rem;
+  }
+
   .content-section {
     margin: 1rem 0 3rem;
   }
 
   .section-title {
     margin: 1.5rem 0 0.8rem;
+  }
+
+  li {
+    list-style: inside;
+    list-style-type: number;
+    font-size: var(--h3);
+    line-height: 150%;
   }
 
   @media (min-width: 700px) {
@@ -35,9 +48,11 @@
 
     .section-title {
       grid-column: 1/2;
+      margin: 0;
     }
 
     .body-box {
       grid-column: 2/3;
+      justify-self: start;
     }
    }
