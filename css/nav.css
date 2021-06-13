@@ -13,4 +13,5 @@ nav > a > img{
 nav img {
   height: 4vh;
   min-height: 25px;
+  cursor: pointer;
 }
