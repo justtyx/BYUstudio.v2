@@ -21,11 +21,11 @@
 
   /*mobile*/
   --h1: clamp(24px, 10vw, 46px);
-  --h2: clamp(16px, 6vw, 36px);
-  --h3: clamp(20px, 4vw, 30px);
-  --h4: clamp(20px, 3vw, 26px);
+  --h2: clamp(18px, 6vw, 36px);
+  --h3: clamp(17px, 4vw, 30px);
+  --h4: clamp(14px, 3vw, 26px);
   --p: clamp(14px, 2vw, 24px);
-  --button: clamp(20px, 8vw, 26px);
+  --button: clamp(14px, 3vw, 16px);
 
   --shadow: rgba(0, 0, 0, 0.1) 2px 4px 11px 0px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -75,7 +75,7 @@ a {
 
 button {
   padding: 0.8rem 2rem;
-  font-size: var(--button-copy);
+  font-size: var(--button);
   border: none;
   background-color: var(--beige);
   color: white;

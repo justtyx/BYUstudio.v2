@@ -1,28 +1,37 @@
-#thickLines {
-    position: absolute;
-    top: 0;
-    margin-left: var(--theNumber);
-    margin-right: var(--theNumber);
-    z-index: -1;
-    background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/5384d124dfc21ad3bf071280d58b1bb19f3b8852/assets/bursh-waves.svg);
-    width: 100vw;
-    height: 50vw;
-    background-size: cover;
-  }
-
-  
-#title {
+.labels-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-#title > img {
-  border-radius: 0.4vw;
+.labels-box>button {
+  border: 2px solid var(--beige);
+  color: var(--beige);
+  background-color: white;
+  width: 8rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0.2rem;
 }
 
-  #decorative {
-    font-family: "autography";
-    text-align: center;
-  }
+.faq-section>h2 {
+  color: var(--beige);
+}
+
+.faq-question {
+  font-weight: 500;
+}
+
+.faq-title-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+
+.faq-title-box>img {
+  width: 1rem;
+  height: auto;
+}
