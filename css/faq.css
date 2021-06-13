@@ -14,7 +14,7 @@
   margin: 0.2rem;
 }
 
-.labels-box>a>button:hover {
+.labels-box>a>button:hover, .labels-box>a>button:active {
   border: 2px solid white;
   color: white;
   background-color: var(--beige);
