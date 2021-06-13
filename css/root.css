@@ -20,7 +20,7 @@
   --dark-green: #44a86a;
   --light-beige: #ffdcd0;
   /*desktop*/
-  --h1-d: 4.6vw;
+  /* --h1-d: 4.6vw; */
   --h2-d: 3.981vw;
   --h3-d: 3.318vw;
   --body-copy: 1.111vw;
@@ -31,8 +31,8 @@
   --theNumber: -6.944vw;
 
   /*mobile*/
-  --h1-m: 10.427vw;
-  --h2-m: 8.853vw;
+  --h1: clamp(24px, 10vw, 46px);
+  --h2-m: clamp(20px, 8vw, 26px);
   --h3-m: 7.373vw;
   --h4-m: 6.24vw;
   --body-copy-m: 4.267vw;
@@ -49,6 +49,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-size: var(--h1);
 }
 
 h2 {

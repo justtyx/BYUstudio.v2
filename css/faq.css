@@ -9,3 +9,20 @@
     height: 50vw;
     background-size: cover;
   }
+
+  
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title > img {
+  border-radius: 0.4vw;
+}
+
+  #decorative {
+    font-family: "autography";
+    text-align: center;
+  }
