@@ -5,12 +5,6 @@
   src: url("assets/Autography.otf"), format("otf");
 }
 
-* {
-  box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
-}
-
 :root {
   --yellow: #ffd800;
   --beige: #e1a089;
@@ -20,26 +14,32 @@
   --dark-green: #44a86a;
   --light-beige: #ffdcd0;
   /*desktop*/
-  /* --h1-d: 4.6vw; */
-  --h2-d: 3.981vw;
-  --h3-d: 3.318vw;
-  --body-copy: 1.111vw;
-  --line-height: 1.8em;
-  --button-copy: 0.972rem;
+  --line-height: 140%;
 
   --margin: 0vw 6.944vw 0vw;
   --theNumber: -6.944vw;
 
   /*mobile*/
   --h1: clamp(24px, 10vw, 46px);
-  --h2-m: clamp(20px, 8vw, 26px);
-  --h3-m: 7.373vw;
-  --h4-m: 6.24vw;
-  --body-copy-m: 4.267vw;
-  --button-copy-m: 3.733vw;
+  --h2: clamp(16px, 6vw, 36px);
+  --h3: clamp(20px, 4vw, 30px);
+  --h4: clamp(20px, 3vw, 26px);
+  --p: clamp(14px, 2vw, 24px);
+  --button: clamp(20px, 8vw, 26px);
 
   --shadow: rgba(0, 0, 0, 0.1) 2px 4px 11px 0px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -47,17 +47,26 @@ body {
   font-family: "montserrat";
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 h1 {
   font-size: var(--h1);
 }
 
 h2 {
-  font-size: var(--h2-d);
+  font-size: var(--h2);
 }
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
 
 a {
   text-decoration: none;
@@ -65,8 +74,6 @@ a {
 }
 
 button {
-  /* width: 8.5rem;
-  height: 2.8rem; */
   padding: 0.8rem 2rem;
   font-size: var(--button-copy);
   border: none;
@@ -75,4 +82,8 @@ button {
   font-weight: 400;
   border-radius: 7px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
