@@ -14,6 +14,30 @@
     font-family: "autography";
   }
 
+  .content-section {
+    margin: 1rem 0 3rem;
+  }
+
   .section-title {
     margin: 1.5rem 0 0.8rem;
   }
+
+  @media (min-width: 700px) {
+
+    .bg-brush-waves {
+      height: 30vh;
+     }
+
+    .content-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+      grid-column: 1/2;
+    }
+
+    .body-box {
+      grid-column: 2/3;
+    }
+   }
