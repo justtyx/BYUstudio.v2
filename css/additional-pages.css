@@ -35,8 +35,16 @@
   }
 
   
+.beige {
+  color: var(--beige);
+}
+
 .yellow {
   color: var(--yellow);
+}
+
+.dark-green {
+  color: var(--dark-green);
 }
    
 .deco-lines {
