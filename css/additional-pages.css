@@ -31,9 +31,18 @@
   .process>li {
     list-style: inside;
     list-style-type: number;
-    font-size: var(--h3);
-    line-height: 150%;
+    line-height: 200%;
   }
+
+  
+.yellow {
+  color: var(--yellow);
+}
+   
+.deco-lines {
+  display: none;
+}
+
 
   @media (min-width: 700px) {
 
@@ -54,5 +63,20 @@
     .body-box {
       grid-column: 2/3;
       justify-self: start;
+    }
+
+    .waves-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: var(--theNumber);
+    }
+    
+    .deco-lines {
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/c780c79a42147516ac6bc5d48513f02a17364e32/assets/yellow-3-lines.svg);
+      grid-column: 2/3;
     }
    }

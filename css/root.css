@@ -47,9 +47,9 @@ body {
   font-family: "montserrat";
 }
 
-/* img {
-  max-width: 100%;
-} */
+::selection {
+  background-color: var(--beige);
+}
 
 h1 {
   font-size: var(--h1);
