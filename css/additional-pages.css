@@ -46,6 +46,10 @@
 .dark-green {
   color: var(--dark-green);
 }
+
+.dark-green {
+  color: var(--dark-green);
+}
    
 .deco-lines {
   display: none;
