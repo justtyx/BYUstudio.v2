@@ -14,10 +14,18 @@ img.landing-img-abt {
 }
 
 @media (min-width: 700px) {
+.waves-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: var(--theNumber);
+}
+
 .deco-lines {
     height: 100px;
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/c780c79a42147516ac6bc5d48513f02a17364e32/assets/yellow-3-lines.svg);
-}}
+    grid-column: 2/3;
+}
+}
