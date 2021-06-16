@@ -1,12 +1,3 @@
-/*delete later when a global margin is set*/
-/* main {
-  margin: 0 2rem 0 2rem;
-} */
-
-/* section {
-  border-bottom: 2rem;
-} */
-
 .currenttabcheckout {
   opacity: 50%;
 }
@@ -137,7 +128,7 @@ input {
   border-left: none;
   border-right: none;
   font-family: "Montserrat";
-  height: 1.5rem;
+  padding: 0.2rem 0;
   margin-bottom: 0.5rem;
   width: 100%;
 }
@@ -163,13 +154,15 @@ input {
 .sec-deliveryoption > input,
 .sec-billingaddress > input {
   grid-column-start: 1;
-  height: 1rem;
 }
 .sec-deliveryoption > h4,
 .sec-billingaddress > h4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  height: 1rem;
+  grid-column: 1/3;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  margin: 1rem 0 0.5rem;
 }
 
 /* -------- Payment Form ----------- */
@@ -190,7 +183,7 @@ input {
   width: 100%;
 }
 .paymentoptionwrap > input {
-  width: 1.5rem;
+  padding: 0.2rem 0;
 }
 
 .paymentoptionselected {
