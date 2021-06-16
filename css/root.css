@@ -23,7 +23,7 @@
   --h1: clamp(24px, 10vw, 46px);
   --h2: clamp(18px, 6vw, 36px);
   --h3: clamp(17px, 4vw, 26px);
-  --h4: clamp(14px, 3vw, 26px);
+  --h4: clamp(17px, 3vw, 26px);
   --p: clamp(14px, 2vw, 17px);
   --button: clamp(14px, 3vw, 16px);
 
@@ -49,8 +49,9 @@ body {
   font-family: "montserrat";
 }
 
-::selection {
-  background-color: var(--beige);
+img {
+  width: auto;
+  height: auto;
 }
 
 h1 {
