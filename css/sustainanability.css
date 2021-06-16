@@ -1,0 +1,21 @@
+.text-image-box>img {
+    height: 7rem;
+    width: auto;
+    border-radius: 7px;
+    margin-right: 2rem;
+}
+
+.text-image-box {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.text-image-box>h3, .text-image-box>p {
+    margin: 0;
+}
+
+.sustainability-page.content-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+  }
