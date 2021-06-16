@@ -35,20 +35,10 @@ main {
   color: var(--beige);
 }
 
-/* .filter ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-} */
-
-/* .filter li {
-  margin: 0 1rem;
-} */
-
 #productlist {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .product a {
@@ -101,10 +91,12 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-template-rows: 1fr;
     grid-gap: 1rem;
+    justify-content: center;
   }
 
   .product {
     margin-bottom: 0;
+    justify-self: center;
   }
   /* #productlist {
     flex-wrap: wrap;
