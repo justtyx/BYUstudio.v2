@@ -1,0 +1,34 @@
+video {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 700px) {
+
+    .tutorial {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: start;
+        align-items: start;
+        margin: 2rem 0 5rem;
+        gap: 2rem;
+    }
+
+.tutorial.left>video {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.text-left {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.tutorial.right>video {
+    grid-column: 2/4;
+}
+
+.text-right {
+    grid-column: 1/2;
+}
+}
