@@ -50,18 +50,19 @@ main {
 }
 
 .process>p {
-  margin-bottom: 1rem;
+  margin: -1rem 0 2rem;
   font-size: var(--p);
 }
 
 .list-box {
   display: flex;
   align-items: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .list-box>img {
-  width: 3rem;
+  width: 4vw;
+  min-width: 40px;
   height: auto;
   margin-right: 1rem;
 }
