@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 2vw;
+  position: relative;
 }
 
 nav > a > img{

@@ -1,39 +1,70 @@
+.nav-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: var(--margin);
+}
+
+main {
+  margin-top: -5rem;
+}
+
 .bg-brush-waves {
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; 
+    z-index: -1;*/
+    width: 100vw;
+    height: 25vh;
     margin-left: var(--theNumber);
     margin-right: var(--theNumber);
-    z-index: -1;
+
     background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/1beb5074613d7edfef405a801ce3a3b7bd1702a2/assets/bursh-waves.svg);
-    width: 100vw;
-    height: 20vh;
     background-size: cover;
   }
 
-  .page-title {
-    font-family: "autography";
-  }
+.page-title {
+  font-family: "autography";
+}
 
-  .intro-text {
-    max-width: 600px;
-    display: block;
-    margin: 2rem auto 4rem;
-  }
+.intro-text {
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto 2rem;
+}
 
-  .content-section {
-    margin: 1rem 0 3rem;
-  }
+.content-section {
+  margin: 1rem 0 3rem;
+}
 
-  .section-title {
-    margin: 1.5rem 0 0.8rem;
-  }
+.section-title {
+  margin: 1.5rem 0 0.8rem;
+}
 
-  .process>li {
-    list-style: inside;
-    list-style-type: number;
-    line-height: 200%;
-  }
+.process>div>li {
+  list-style: inside;
+  list-style-type: none;
+  line-height: 200%;
+  font-size: var(--h3);
+}
 
+.process>p {
+  margin-bottom: 1rem;
+  font-size: var(--p);
+}
+
+.list-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.list-box>img {
+  width: 3rem;
+  height: auto;
+  margin-right: 1rem;
+}
   
 .beige {
   color: var(--beige);
@@ -72,9 +103,17 @@
       margin: 0;
     }
 
+    .intro-text {
+      margin: 1rem auto 4rem;
+      }
+
     .body-box {
       grid-column: 2/3;
       justify-self: start;
+    }
+
+    .body-box>p {
+      margin: 0.7rem 0 2rem;
     }
 
     .waves-grid {

@@ -4,3 +4,7 @@ img.landing-img-abt {
     display: block;
     margin: auto;
 }
+
+p.about-intro {
+    margin-top: 2rem;
+}
