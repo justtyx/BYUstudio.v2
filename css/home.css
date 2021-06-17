@@ -437,11 +437,6 @@ h4 {
   }
 
   /*general*/
-  h1 {
-    font-size: var(--h1);
-    width: 86vw;
-  }
-
   h2 {
     font-size: var(--h2);
   }

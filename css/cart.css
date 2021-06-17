@@ -61,8 +61,9 @@ body {
     margin: 0.2rem 0;
 }
 
-.cart-item-name {
+h2.cart-item-name {
     align-self: start;
+    font-size: var(--h3);
 }
 
 .cart-item-description {
