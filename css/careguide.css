@@ -1,8 +1,0 @@
-.list-box.care-guide>li {
-    font-size: var(--p);
-}
-
-.list-box.care-guide>img {
-    width: 3vw;
-    min-width: 20px;
-}

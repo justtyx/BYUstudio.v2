@@ -132,3 +132,49 @@ main {
       grid-column: 2/3;
     }
    }
+
+   /* about */
+   img.landing-img-abt {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+p.about-intro {
+    margin-top: 2rem;
+}
+
+/* care guide */
+.list-box.care-guide>li {
+  font-size: var(--p);
+}
+
+.list-box.care-guide>img {
+  width: 3vw;
+  min-width: 20px;
+}
+
+/* sustainability */
+
+.text-image-box>img {
+  height: 7rem;
+  width: auto;
+  border-radius: 7px;
+  margin-right: 2rem;
+}
+
+.text-image-box {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.text-image-box>h3, .text-image-box>p {
+  margin: 0;
+}
+
+.sustainability-page.content-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+}

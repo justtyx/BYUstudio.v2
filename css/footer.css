@@ -1,3 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vw;
+  position: relative;
+}
+
+nav > a > img{
+  height: 10vh;
+  min-height: 50px;
+}
+
+nav img {
+  height: 4vh;
+  min-height: 25px;
+  cursor: pointer;
+}
+
 footer > p {
   font-size: var(--body-copy);
   line-height: var(--line-height);
