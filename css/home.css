@@ -132,6 +132,8 @@ iframe {
 
 .oneStep > p {
   text-align: center;
+  font-size: var(--h4);
+  font-weight: 700;
 }
 
 #stepsWrapper {
