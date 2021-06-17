@@ -12,9 +12,6 @@ main {
 }
 
 .bg-brush-waves {
-    /* position: absolute;
-    top: 0; 
-    z-index: -1;*/
     width: 100vw;
     height: 25vh;
     margin-left: var(--theNumber);
@@ -73,10 +70,6 @@ main {
 
 .yellow {
   color: var(--yellow);
-}
-
-.dark-green {
-  color: var(--dark-green);
 }
 
 .dark-green {
