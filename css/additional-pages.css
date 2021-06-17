@@ -20,7 +20,7 @@ main {
     margin-left: var(--theNumber);
     margin-right: var(--theNumber);
 
-    background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/1beb5074613d7edfef405a801ce3a3b7bd1702a2/assets/bursh-waves.svg);
+    background-image: url(https://raw.githubusercontent.com/justtyx/BYUstudio.v2/master/assets/brush-waves.webp);
     background-size: cover;
   }
 
